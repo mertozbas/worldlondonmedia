@@ -1,6 +1,8 @@
-const loader = document.getElementById("loader");
+function initLoader() {
+  const loader = document.getElementById("loader");
 
-if (loader) {
+  if (!loader) return;
+
   const pb = loader.querySelector(".loader-progress-bar");
   const ct = loader.querySelector(".loader-counter");
   const chars = loader.querySelectorAll(".loader-logo span");
@@ -26,8 +28,16 @@ if (loader) {
       clearInterval(iv);
       setTimeout(() => {
         loader.style.opacity = "0";
+        loader.style.transition = "opacity 0.8s ease";
         setTimeout(() => (loader.style.display = "none"), 800);
       }, 300);
     }
   }, 50);
+}
+
+// Run when DOM is ready, or immediately if already loaded
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initLoader);
+} else {
+  initLoader();
 }
