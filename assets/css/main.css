@@ -889,6 +889,51 @@ button {
     gap: 2rem;
 }
 
+.work-showcase-header .section-desc {
+    margin-top: 1.5rem;
+}
+
+/* Section header right — decorative line + subtle link */
+.section-header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1.2rem;
+}
+
+.section-header-line {
+    display: block;
+    width: 60px;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--red));
+}
+
+.section-header-link {
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    transition: all 0.4s ease;
+    font-weight: 500;
+}
+
+.section-header-link:hover {
+    color: var(--red);
+    gap: 1rem;
+}
+
+.section-header-link svg {
+    transition: transform 0.4s ease;
+}
+
+.section-header-link:hover svg {
+    transform: translateX(4px);
+}
+
 .work-horizontal {
     display: flex;
     gap: 1.5rem;
@@ -1047,6 +1092,10 @@ button {
     flex-wrap: wrap;
     gap: 2rem;
     margin-bottom: 4rem;
+}
+
+.services-accordion-header .section-desc {
+    margin-top: 1.5rem;
 }
 
 .service-panel {
