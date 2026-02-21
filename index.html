@@ -7,45 +7,45 @@
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/main.css">
 <script src="assets/js/loader.js"></script>
 </head>
 <body class="home-page">
 <div class="cursor"></div>
 <div class="cursor-follower"></div>
+<div class="page-transition"></div>
 
+<!-- Loader: WM Logomark SVG Draw Animation -->
 <div class="loader" id="loader">
-<div class="loader-logo"><span>W</span><span>o</span><span>r</span><span>l</span><span>d</span><span>&nbsp;</span><span>L</span><span>o</span><span>n</span><span>d</span><span>o</span><span>n</span><span>&nbsp;</span><span>M</span><span>e</span><span>d</span><span>i</span><span>a</span></div>
+<div class="loader-logo">
+<svg viewBox="0 0 289.9 274.62" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="loaderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#fa812f"/><stop offset="50%" stop-color="#c7253e"/>
+<stop offset="100%" stop-color="#821131"/></linearGradient></defs>
+<rect x=".5" y=".5" width="288.9" height="273.62" rx="14.44" ry="14.44" fill="none" stroke="#c7253e" stroke-width="1.5" opacity="0.2"/>
+<path class="wm-w" d="M174.51,180.15c-16.34-36.26-32.68-72.53-49.03-108.79-12.35,34.31-26.35,76.24-37.06,108.79-2.06-.19-5.15-.39-7.82-.39s-5.15.19-7.62.39c-10.5-38.02-24.29-80.72-36.85-119.91-2.88-7.21-7.82-11.12-14-12.09l.41-3.12c5.76.58,11.53.78,18.73.78h.82c9.27,0,14.82-.19,23.06-.78l.62,3.12c-8.23.78-10.29,5.65-7.62,14.82,8.85,31.2,20.18,69.41,28.41,93.59,12.76-34.9,26.35-75.06,37.06-111.13,2.47.19,5.15.19,7.41.19,2.47,0,5.15,0,7.41-.19,18.28,31.48,36.56,62.96,54.84,94.43-6.26,13.43-12.52,26.86-18.78,40.29Z" fill="none" stroke="#1a1a1a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<path class="wm-m" d="M115.34,100.11c10.22,21,20.72,42.19,31.51,63.55,9.21,18.25,18.45,36.27,27.71,54.05,19.83-38.74,39.05-80.03,49.79-106.05,5.16.39,10.12.59,15.08.59s9.3-.19,14.05-.59l.62,3.13c-7.64.59-11.98,6.07-11.36,17.22,1.24,22.89,6.82,63.2,12.19,99.98,1.24,9.39,5.58,11.74,11.36,12.33l-.41,3.13c-6.4-.58-13.43-.78-21.07-.78s-15.7.2-21.28.78l-.41-3.13c8.06-1.17,11.36-4.89,10.74-12.52-2.69-31.11-7.23-66.72-10.95-90.79-13.64,26.8-33.67,68.48-51.85,107.61h-4.55c-21.47-36.55-42.93-73.1-64.4-109.66,4.41-12.95,8.83-25.91,13.24-38.86Z" fill="none" stroke="url(#loaderGrad)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
 <div class="loader-progress"><div class="loader-progress-bar"></div></div>
 <div class="loader-counter">0%</div>
 </div>
 
+<!-- Navigation -->
 <nav class="nav">
 <a href="index.html" class="nav-logo-link">
-<div class="wlm-logo">
-<div class="outer-ring"></div>
-<div class="inner-ring"></div>
-<div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div>
-<div class="glow-effect"></div>
-<div class="logo-svg-container">
-<svg class="logo-svg" viewBox="0 0 100 100">
-<defs><linearGradient id="navGoldGradient" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#F5D78E"/><stop offset="50%" stop-color="#D4AF37"/><stop offset="100%" stop-color="#8B6914"/></linearGradient></defs>
-<path class="letter-w" d="M 18 22 L 30 78 L 50 38 L 70 78 L 82 22"/>
-<path class="letter-m" d="M 18 78 L 30 22 L 50 62 L 70 22 L 82 78"/>
+<svg class="wm-mark" viewBox="0 0 289.9 274.62" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="wmGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#fa812f"/><stop offset="50%" stop-color="#c7253e"/>
+<stop offset="100%" stop-color="#821131"/></linearGradient></defs>
+<rect x=".5" y=".5" width="288.9" height="273.62" rx="14.44" ry="14.44" fill="#fef3e2" stroke="#c7253e" stroke-miterlimit="10" stroke-width="4"/>
+<path fill="#1a1a1a" d="M174.51,180.15c-16.34-36.26-32.68-72.53-49.03-108.79-12.35,34.31-26.35,76.24-37.06,108.79-2.06-.19-5.15-.39-7.82-.39s-5.15.19-7.62.39c-10.5-38.02-24.29-80.72-36.85-119.91-2.88-7.21-7.82-11.12-14-12.09l.41-3.12c5.76.58,11.53.78,18.73.78h.82c9.27,0,14.82-.19,23.06-.78l.62,3.12c-8.23.78-10.29,5.65-7.62,14.82,8.85,31.2,20.18,69.41,28.41,93.59,12.76-34.9,26.35-75.06,37.06-111.13,2.47.19,5.15.19,7.41.19,2.47,0,5.15,0,7.41-.19,18.28,31.48,36.56,62.96,54.84,94.43-6.26,13.43-12.52,26.86-18.78,40.29Z"/>
+<path fill="url(#wmGrad)" d="M115.34,100.11c10.22,21,20.72,42.19,31.51,63.55,9.21,18.25,18.45,36.27,27.71,54.05,19.83-38.74,39.05-80.03,49.79-106.05,5.16.39,10.12.59,15.08.59s9.3-.19,14.05-.59l.62,3.13c-7.64.59-11.98,6.07-11.36,17.22,1.24,22.89,6.82,63.2,12.19,99.98,1.24,9.39,5.58,11.74,11.36,12.33l-.41,3.13c-6.4-.58-13.43-.78-21.07-.78s-15.7.2-21.28.78l-.41-3.13c8.06-1.17,11.36-4.89,10.74-12.52-2.69-31.11-7.23-66.72-10.95-90.79-13.64,26.8-33.67,68.48-51.85,107.61h-4.55c-21.47-36.55-42.93-73.1-64.4-109.66,4.41-12.95,8.83-25.91,13.24-38.86Z"/>
 </svg>
-</div>
-<div class="center-orb"></div>
-</div>
+<span class="nav-brand-text">World London Media</span>
 </a>
 <div class="nav-right">
-<ul class="nav-links" id="navLinks">
-<li><a href="index.html" class="nav-link active">Home</a></li>
-<li><a href="pages/work.html" class="nav-link">Work</a></li>
-<li><a href="pages/services.html" class="nav-link">Services</a></li>
-<li><a href="pages/about.html" class="nav-link">About</a></li>
-<li><a href="pages/contact.html" class="nav-link">Contact</a></li>
-</ul>
 <button class="lang-toggle" id="langToggle">
 <span class="lang-current">EN</span><span class="lang-divider">/</span><span class="lang-other">TR</span>
 </button>
@@ -53,79 +53,159 @@
 </div>
 </nav>
 
+<!-- Fullscreen Menu Overlay -->
+<div class="menu-overlay" id="menuOverlay">
+<div class="menu-links">
+<a href="index.html" class="menu-link active"><span class="link-num">01</span>Home</a>
+<a href="pages/work.html" class="menu-link"><span class="link-num">02</span>Work</a>
+<a href="pages/services.html" class="menu-link"><span class="link-num">03</span>Services</a>
+<a href="pages/about.html" class="menu-link"><span class="link-num">04</span>About</a>
+<a href="pages/contact.html" class="menu-link"><span class="link-num">05</span>Contact</a>
+</div>
+<div class="menu-info">
+<div class="menu-wm-watermark">
+<svg viewBox="0 0 289.9 274.62" xmlns="http://www.w3.org/2000/svg">
+<path fill="rgba(254,243,226,0.05)" d="M174.51,180.15c-16.34-36.26-32.68-72.53-49.03-108.79-12.35,34.31-26.35,76.24-37.06,108.79-2.06-.19-5.15-.39-7.82-.39s-5.15.19-7.62.39c-10.5-38.02-24.29-80.72-36.85-119.91-2.88-7.21-7.82-11.12-14-12.09l.41-3.12c5.76.58,11.53.78,18.73.78h.82c9.27,0,14.82-.19,23.06-.78l.62,3.12c-8.23.78-10.29,5.65-7.62,14.82,8.85,31.2,20.18,69.41,28.41,93.59,12.76-34.9,26.35-75.06,37.06-111.13,2.47.19,5.15.19,7.41.19,2.47,0,5.15,0,7.41-.19,18.28,31.48,36.56,62.96,54.84,94.43-6.26,13.43-12.52,26.86-18.78,40.29Z"/>
+<path fill="rgba(254,243,226,0.08)" d="M115.34,100.11c10.22,21,20.72,42.19,31.51,63.55,9.21,18.25,18.45,36.27,27.71,54.05,19.83-38.74,39.05-80.03,49.79-106.05,5.16.39,10.12.59,15.08.59s9.3-.19,14.05-.59l.62,3.13c-7.64.59-11.98,6.07-11.36,17.22,1.24,22.89,6.82,63.2,12.19,99.98,1.24,9.39,5.58,11.74,11.36,12.33l-.41,3.13c-6.4-.58-13.43-.78-21.07-.78s-15.7.2-21.28.78l-.41-3.13c8.06-1.17,11.36-4.89,10.74-12.52-2.69-31.11-7.23-66.72-10.95-90.79-13.64,26.8-33.67,68.48-51.85,107.61h-4.55c-21.47-36.55-42.93-73.1-64.4-109.66,4.41-12.95,8.83-25.91,13.24-38.86Z"/>
+</svg>
+</div>
+<div class="menu-contact-info">
+<a href="mailto:info@worldlondonmedia.com">info@worldlondonmedia.com</a>
+<p>London, UK &bull; Izmir, Turkey</p>
+<div class="menu-social">
+<a href="https://www.instagram.com/worldlondonmedia/" target="_blank">Instagram</a>
+<a href="https://wa.me/447717115002" target="_blank">WhatsApp</a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Hero: Asymmetric Split -->
 <section class="hero">
-<div class="hero-bg"></div>
-<div class="hero-showreel-bg">
-<!-- Video removed for GitHub Pages – add background video URL here if needed -->
+<div class="hero-wm-watermark">
+<svg viewBox="0 0 289.9 274.62" xmlns="http://www.w3.org/2000/svg">
+<path fill="rgba(199,37,62,0.03)" d="M174.51,180.15c-16.34-36.26-32.68-72.53-49.03-108.79-12.35,34.31-26.35,76.24-37.06,108.79-2.06-.19-5.15-.39-7.82-.39s-5.15.19-7.62.39c-10.5-38.02-24.29-80.72-36.85-119.91-2.88-7.21-7.82-11.12-14-12.09l.41-3.12c5.76.58,11.53.78,18.73.78h.82c9.27,0,14.82-.19,23.06-.78l.62,3.12c-8.23.78-10.29,5.65-7.62,14.82,8.85,31.2,20.18,69.41,28.41,93.59,12.76-34.9,26.35-75.06,37.06-111.13,2.47.19,5.15.19,7.41.19,2.47,0,5.15,0,7.41-.19,18.28,31.48,36.56,62.96,54.84,94.43-6.26,13.43-12.52,26.86-18.78,40.29Z"/>
+<path fill="rgba(199,37,62,0.05)" d="M115.34,100.11c10.22,21,20.72,42.19,31.51,63.55,9.21,18.25,18.45,36.27,27.71,54.05,19.83-38.74,39.05-80.03,49.79-106.05,5.16.39,10.12.59,15.08.59s9.3-.19,14.05-.59l.62,3.13c-7.64.59-11.98,6.07-11.36,17.22,1.24,22.89,6.82,63.2,12.19,99.98,1.24,9.39,5.58,11.74,11.36,12.33l-.41,3.13c-6.4-.58-13.43-.78-21.07-.78s-15.7.2-21.28.78l-.41-3.13c8.06-1.17,11.36-4.89,10.74-12.52-2.69-31.11-7.23-66.72-10.95-90.79-13.64,26.8-33.67,68.48-51.85,107.61h-4.55c-21.47-36.55-42.93-73.1-64.4-109.66,4.41-12.95,8.83-25.91,13.24-38.86Z"/>
+</svg>
 </div>
-<div class="hero-content">
-<div class="hero-brand">
-<span class="hero-brand-text" data-en="World London <span>Media</span>" data-tr="World London <span>Media</span>">World London <span>Media</span></span>
+<div class="hero-left">
+<span class="hero-word-world reveal" data-en="World" data-tr="World">World</span>
+<span class="hero-word-media reveal reveal-d2" data-en="Premium Visual Production" data-tr="Premium G&ouml;rsel Prod&uuml;ksiyon">Premium Visual Production<span class="hero-line"></span></span>
 </div>
-<div class="hero-tagline" data-en="Premium Visual Production" data-tr="Premium Görsel Prodüksiyon">Premium Visual Production</div>
-<h1 class="hero-title" data-en="From Content<br>to <em>Impact.</em>" data-tr="İçerikten<br><em>Etkiye.</em>">From Content<br>to <em>Impact.</em></h1>
-<p class="hero-subtitle" data-en="Ideas move. Quality shows." data-tr="Fikirler hareket eder. Kalite kendini gösterir.">Ideas move. Quality shows.</p>
-<div class="hero-cta-group">
-<a href="pages/work.html" class="hero-cta"><span data-en="View Our Work" data-tr="Çalışmalarımız">View Our Work</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-<a href="pages/contact.html" class="hero-cta-contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg><span data-en="Contact Us" data-tr="İletişime Geçin">Contact Us</span></a>
+<div class="hero-center reveal reveal-d1">
+<svg class="hero-wm-logo" viewBox="0 0 289.9 274.62" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="heroWmGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#fa812f"/><stop offset="50%" stop-color="#c7253e"/><stop offset="100%" stop-color="#821131"/></linearGradient></defs>
+<rect x=".5" y=".5" width="288.9" height="273.62" rx="14.44" ry="14.44" fill="#fef3e2" stroke="#c7253e" stroke-miterlimit="10" stroke-width="4"/>
+<path fill="#1a1a1a" d="M174.51,180.15c-16.34-36.26-32.68-72.53-49.03-108.79-12.35,34.31-26.35,76.24-37.06,108.79-2.06-.19-5.15-.39-7.82-.39s-5.15.19-7.62.39c-10.5-38.02-24.29-80.72-36.85-119.91-2.88-7.21-7.82-11.12-14-12.09l.41-3.12c5.76.58,11.53.78,18.73.78h.82c9.27,0,14.82-.19,23.06-.78l.62,3.12c-8.23.78-10.29,5.65-7.62,14.82,8.85,31.2,20.18,69.41,28.41,93.59,12.76-34.9,26.35-75.06,37.06-111.13,2.47.19,5.15.19,7.41.19,2.47,0,5.15,0,7.41-.19,18.28,31.48,36.56,62.96,54.84,94.43-6.26,13.43-12.52,26.86-18.78,40.29Z"/>
+<path fill="url(#heroWmGrad)" d="M115.34,100.11c10.22,21,20.72,42.19,31.51,63.55,9.21,18.25,18.45,36.27,27.71,54.05,19.83-38.74,39.05-80.03,49.79-106.05,5.16.39,10.12.59,15.08.59s9.3-.19,14.05-.59l.62,3.13c-7.64.59-11.98,6.07-11.36,17.22,1.24,22.89,6.82,63.2,12.19,99.98,1.24,9.39,5.58,11.74,11.36,12.33l-.41,3.13c-6.4-.58-13.43-.78-21.07-.78s-15.7.2-21.28.78l-.41-3.13c8.06-1.17,11.36-4.89,10.74-12.52-2.69-31.11-7.23-66.72-10.95-90.79-13.64,26.8-33.67,68.48-51.85,107.61h-4.55c-21.47-36.55-42.93-73.1-64.4-109.66,4.41-12.95,8.83-25.91,13.24-38.86Z"/>
+</svg>
+</div>
+<div class="hero-right">
+<span class="hero-word-london reveal-right" data-en="London" data-tr="London">London</span>
+<span class="hero-word-sub reveal reveal-d3" data-en="Media" data-tr="Media">Media</span>
+</div>
+<div class="hero-bottom">
+<div class="hero-tagline reveal reveal-d2" data-en="From Content to Impact" data-tr="I&#231;erikten Etkiye">From Content to Impact</div>
+<p class="hero-subtitle reveal reveal-d3" data-en="Ideas move. Quality shows." data-tr="Fikirler hareket eder. Kalite kendini g&ouml;sterir.">Ideas move. Quality shows.</p>
+<div class="hero-cta-group reveal reveal-d4">
+<a href="pages/work.html" class="cta-btn"><span data-en="View Our Work" data-tr="&#199;al&#305;&#351;malar&#305;m&#305;z">View Our Work</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+<a href="pages/contact.html" class="cta-btn-filled"><span data-en="Get In Touch" data-tr="&#304;leti&#351;ime Ge&#231;in">Get In Touch</span></a>
 </div>
 </div>
 <div class="hero-scroll"><span class="hero-scroll-text">Scroll</span><div class="hero-scroll-line"></div></div>
 </section>
 
-<section class="video-showcase" id="work">
-<div class="showcase-header">
+<!-- Work Showcase: Horizontal Scroll -->
+<section class="work-showcase" id="work">
+<div class="work-showcase-header">
 <div>
-<span class="section-label" data-en="01 / Selected Work" data-tr="01 / Seçilmiş Çalışmalar">01 / Selected Work</span>
-<h2 class="section-title" data-en="Projects That<br><em>Define</em> Brands" data-tr="Markaları<br><em>Tanımlayan</em> Projeler">Projects That<br><em>Define</em> Brands</h2>
+<span class="section-label reveal" data-en="01 / Selected Work" data-tr="01 / Se&#231;ilmi&#351; &#199;al&#305;&#351;malar">01 / Selected Work</span>
+<h2 class="section-title reveal reveal-d1" data-en="Projects That<br><em>Define</em> Brands" data-tr="Markalar&#305;<br><em>Tan&#305;mlayan</em> Projeler">Projects That<br><em>Define</em> Brands</h2>
 </div>
-<p class="section-desc" data-en="We craft impressions that endure.<br>Your brand, telling its own story." data-tr="Kalıcı izlenimler yaratıyoruz.<br>Markanız, kendi hikayesini anlatıyor.">We craft impressions that endure.<br>Your brand, telling its own story.</p>
+<p class="section-desc reveal reveal-d2" data-en="We craft impressions that endure.<br>Your brand, telling its own story." data-tr="Kal&#305;c&#305; izlenimler yarat&#305;yoruz.<br>Markan&#305;z, kendi hikayesini anlat&#305;yor.">We craft impressions that endure.<br>Your brand, telling its own story.</p>
 </div>
-<div class="video-grid">
-<div class="video-item large">
-<div class="video-placeholder"><span>Corporate Film</span></div>
-<div class="video-item-overlay"><span class="video-item-category">Corporate Film</span><h3 class="video-item-title">Office Management</h3></div>
-<div class="video-play-indicator"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+<div class="work-horizontal">
+<div class="work-card" data-video="">
+<div class="work-card-inner"><span>Corporate Film</span></div>
+<span class="work-card-number">01</span>
+<span class="work-card-label">Corporate</span>
+<div class="work-card-overlay"><span class="work-card-category">Corporate Film</span><h3 class="work-card-title">Office Management</h3></div>
+<div class="work-card-play"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
 </div>
-<div class="video-item medium">
-<div class="video-placeholder"><span>Commercial</span></div>
-<div class="video-item-overlay"><span class="video-item-category">Commercial</span><h3 class="video-item-title">Product Launch</h3></div>
-<div class="video-play-indicator"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+<div class="work-card" data-video="">
+<div class="work-card-inner"><span>Commercial</span></div>
+<span class="work-card-number">02</span>
+<span class="work-card-label">Ad</span>
+<div class="work-card-overlay"><span class="work-card-category">Commercial</span><h3 class="work-card-title">Product Launch</h3></div>
 </div>
-<div class="video-item wide">
-<div class="video-placeholder"><span>3D Visualization</span></div>
-<div class="video-item-overlay"><span class="video-item-category">3D Visualization</span><h3 class="video-item-title">Architectural Render</h3></div>
+<div class="work-card" data-video="">
+<div class="work-card-inner"><span>3D Visualization</span></div>
+<span class="work-card-number">03</span>
+<span class="work-card-label">3D Viz</span>
+<div class="work-card-overlay"><span class="work-card-category">3D Visualization</span><h3 class="work-card-title">Architectural Render</h3></div>
 </div>
-<div class="video-item wide">
-<div class="video-placeholder"><span>Drone Footage</span></div>
-<div class="video-item-overlay"><span class="video-item-category">Drone Cinematography</span><h3 class="video-item-title">Aerial Perspectives</h3></div>
+<div class="work-card" data-video="">
+<div class="work-card-inner"><span>Drone Footage</span></div>
+<span class="work-card-number">04</span>
+<span class="work-card-label">Drone</span>
+<div class="work-card-overlay"><span class="work-card-category">Drone Cinematography</span><h3 class="work-card-title">Aerial Perspectives</h3></div>
 </div>
 </div>
-<div style="text-align:center;margin-top:3rem;padding:0 var(--container-padding)">
-<a href="pages/work.html" class="cta-btn"><span data-en="View All Projects" data-tr="Tüm Projeleri Gör">View All Projects</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+<div class="work-showcase-footer">
+<a href="pages/work.html" class="cta-btn"><span data-en="View All Projects" data-tr="T&uuml;m Projeleri G&ouml;r">View All Projects</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
 </div>
 </section>
 
-<section class="services" id="services">
-<div class="services-header">
+<!-- Services: Accordion Panels -->
+<section class="services-accordion" id="services">
+<div class="services-accordion-header">
 <div>
-<span class="section-label" data-en="02 / Expertise" data-tr="02 / Uzmanlık">02 / Expertise</span>
-<h2 class="section-title" data-en="What We<br><em>Deliver</em>" data-tr="Ne<br><em>Sunuyoruz</em>">What We<br><em>Deliver</em></h2>
+<span class="section-label reveal" data-en="02 / Expertise" data-tr="02 / Uzmanl&#305;k">02 / Expertise</span>
+<h2 class="section-title reveal reveal-d1" data-en="What We<br><em>Deliver</em>" data-tr="Ne<br><em>Sunuyoruz</em>">What We<br><em>Deliver</em></h2>
 </div>
-<p class="section-desc" data-en="Transforming ideas into motion.<br>Making quality permanent." data-tr="Fikirleri harekete dönüştürüyoruz.<br>Kaliteyi kalıcı kılıyoruz.">Transforming ideas into motion.<br>Making quality permanent.</p>
+<p class="section-desc reveal reveal-d2" data-en="Transforming ideas into motion.<br>Making quality permanent." data-tr="Fikirleri harekete d&ouml;n&uuml;&#351;t&uuml;r&uuml;yoruz.<br>Kaliteyi kal&#305;c&#305; k&#305;l&#305;yoruz.">Transforming ideas into motion.<br>Making quality permanent.</p>
 </div>
-<div class="services-grid">
-<div class="service-card"><span class="service-number">01</span><svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg><h3 class="service-title" data-en="Brand Films" data-tr="Marka Filmleri">Brand Films</h3><p class="service-desc" data-en="Cinematic brand storytelling that captures your identity." data-tr="Kimliğinizi yakalayan sinematik marka hikayesi.">Cinematic brand storytelling that captures your identity.</p></div>
-<div class="service-card"><span class="service-number">02</span><svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8" fill="currentColor"/></svg><h3 class="service-title" data-en="Advertising" data-tr="Reklam">Advertising</h3><p class="service-desc" data-en="High-impact content for television, digital, and social platforms." data-tr="Televizyon, dijital ve sosyal platformlar için yüksek etkili içerikler.">High-impact content for television, digital, and social platforms.</p></div>
-<div class="service-card"><span class="service-number">03</span><svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg><h3 class="service-title" data-en="3D Visualization" data-tr="3D Görselleştirme">3D Visualization</h3><p class="service-desc" data-en="Architectural rendering, interior visualization, and product modeling." data-tr="Mimari render, iç mekan görselleştirme ve ürün modelleme.">Architectural rendering, interior visualization, and product modeling.</p></div>
+<div class="service-panel reveal">
+<div class="service-panel-header">
+<span class="service-panel-number">01</span>
+<h3 class="service-panel-title" data-en="Brand Films" data-tr="Marka Filmleri">Brand Films</h3>
+<div class="service-panel-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+</div>
+<div class="service-panel-body"><div class="service-panel-body-inner">
+<svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+<p class="service-panel-desc" data-en="Cinematic brand storytelling that captures your identity and communicates your vision to the world." data-tr="Kimli&#287;inizi yakalayan ve vizyonunuzu d&uuml;nyaya ileten sinematik marka hikayeleri.">Cinematic brand storytelling that captures your identity and communicates your vision to the world.</p>
+</div></div>
+</div>
+<div class="service-panel reveal reveal-d1">
+<div class="service-panel-header">
+<span class="service-panel-number">02</span>
+<h3 class="service-panel-title" data-en="Advertising" data-tr="Reklam">Advertising</h3>
+<div class="service-panel-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+</div>
+<div class="service-panel-body"><div class="service-panel-body-inner">
+<svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8" fill="currentColor"/></svg>
+<p class="service-panel-desc" data-en="High-impact content for television, digital, and social platforms that drives engagement and results." data-tr="Etkile&#351;im ve sonu&#231; getiren televizyon, dijital ve sosyal platformlar i&#231;in y&uuml;ksek etkili i&#231;erikler.">High-impact content for television, digital, and social platforms that drives engagement and results.</p>
+</div></div>
+</div>
+<div class="service-panel reveal reveal-d2">
+<div class="service-panel-header">
+<span class="service-panel-number">03</span>
+<h3 class="service-panel-title" data-en="3D Visualization" data-tr="3D G&ouml;rselle&#351;tirme">3D Visualization</h3>
+<div class="service-panel-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+</div>
+<div class="service-panel-body"><div class="service-panel-body-inner">
+<svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+<p class="service-panel-desc" data-en="Architectural rendering, interior visualization, and product modeling that brings concepts to life." data-tr="Konseptleri hayata ge&#231;iren mimari render, i&#231; mekan g&ouml;rselle&#351;tirme ve &uuml;r&uuml;n modelleme.">Architectural rendering, interior visualization, and product modeling that brings concepts to life.</p>
+</div></div>
 </div>
 <div style="text-align:center;margin-top:3rem">
-<a href="pages/services.html" class="cta-btn"><span data-en="All Services" data-tr="Tüm Hizmetler">All Services</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+<a href="pages/services.html" class="cta-btn"><span data-en="All Services" data-tr="T&uuml;m Hizmetler">All Services</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
 </div>
 </section>
 
-<section class="showreel" id="showreel">
-<span class="section-label" style="display:block;padding:0 var(--container-padding);margin-bottom:2rem" data-en="04 / Showreel" data-tr="04 / Showreel">04 / Showreel</span>
+<!-- Showreel -->
+<section class="showreel reveal-scale" id="showreel">
+<span class="section-label" style="display:block;padding:0 var(--container-padding);margin-bottom:2rem" data-en="03 / Showreel" data-tr="03 / Showreel">03 / Showreel</span>
 <div class="showreel-wrapper">
 <div class="video-placeholder" style="aspect-ratio:21/9"><span>Showreel 2025</span></div>
 <div class="showreel-overlay">
@@ -135,54 +215,120 @@
 </div>
 </section>
 
-<section class="process">
-<div class="process-header">
-<span class="section-label" data-en="05 / Our Process" data-tr="05 / Sürecimiz">05 / Our Process</span>
-<h2 class="section-title" style="margin-top:1rem" data-en="How We <em>Work</em>" data-tr="Nasıl <em>Çalışıyoruz</em>">How We <em>Work</em></h2>
+<!-- Process: Vertical Timeline -->
+<section class="process-timeline" id="process">
+<div class="process-timeline-header">
+<span class="section-label reveal" data-en="04 / Our Process" data-tr="04 / S&uuml;recimiz">04 / Our Process</span>
+<h2 class="section-title reveal reveal-d1" style="margin-top:1rem" data-en="How We <em>Work</em>" data-tr="Nas&#305;l <em>&#199;al&#305;&#351;&#305;yoruz</em>">How We <em>Work</em></h2>
 </div>
-<div class="process-grid">
-<div class="process-step"><div class="process-number">01</div><h3 class="process-title" data-en="Discovery" data-tr="Keşif">Discovery</h3><p class="process-desc" data-en="Understanding your brand DNA, objectives, and target audience." data-tr="Marka DNA'nızı, hedeflerinizi ve kitlenizi anlama.">Understanding your brand DNA, objectives, and target audience.</p></div>
-<div class="process-step"><div class="process-number">02</div><h3 class="process-title" data-en="Creative" data-tr="Yaratıcı">Creative</h3><p class="process-desc" data-en="Concept development, storyboarding, and pre-production." data-tr="Konsept geliştirme, storyboard ve ön prodüksiyon.">Concept development, storyboarding, and pre-production.</p></div>
-<div class="process-step"><div class="process-number">03</div><h3 class="process-title" data-en="Production" data-tr="Prodüksiyon">Production</h3><p class="process-desc" data-en="Professional shooting with premium equipment." data-tr="Premium ekipmanlarla profesyonel çekim.">Professional shooting with premium equipment.</p></div>
-<div class="process-step"><div class="process-number">04</div><h3 class="process-title" data-en="Delivery" data-tr="Teslimat">Delivery</h3><p class="process-desc" data-en="Post-production excellence. Color grading, sound design, and final delivery." data-tr="Post-prodüksiyon mükemmelliği. Renk düzeltme, ses tasarımı ve teslimat.">Post-production excellence. Color grading, sound design, and final delivery.</p></div>
+<div class="timeline-container">
+<div class="timeline-item reveal">
+<div class="timeline-content"><h3 class="timeline-title" data-en="Discovery" data-tr="Ke&#351;if">Discovery</h3><p class="timeline-desc" data-en="Understanding your brand DNA, objectives, and target audience." data-tr="Marka DNA'n&#305;z&#305;, hedeflerinizi ve kitlenizi anlama.">Understanding your brand DNA, objectives, and target audience.</p></div>
+<div class="timeline-dot">01</div>
+<div class="timeline-spacer"></div>
+</div>
+<div class="timeline-item reveal">
+<div class="timeline-spacer"></div>
+<div class="timeline-dot">02</div>
+<div class="timeline-content"><h3 class="timeline-title" data-en="Creative" data-tr="Yarat&#305;c&#305;">Creative</h3><p class="timeline-desc" data-en="Concept development, storyboarding, and pre-production planning." data-tr="Konsept geli&#351;tirme, storyboard ve &ouml;n prod&uuml;ksiyon planlama.">Concept development, storyboarding, and pre-production planning.</p></div>
+</div>
+<div class="timeline-item reveal">
+<div class="timeline-content"><h3 class="timeline-title" data-en="Production" data-tr="Prod&uuml;ksiyon">Production</h3><p class="timeline-desc" data-en="Professional shooting with premium equipment and experienced crew." data-tr="Premium ekipmanlar ve deneyimli ekiple profesyonel &#231;ekim.">Professional shooting with premium equipment and experienced crew.</p></div>
+<div class="timeline-dot">03</div>
+<div class="timeline-spacer"></div>
+</div>
+<div class="timeline-item reveal">
+<div class="timeline-spacer"></div>
+<div class="timeline-dot">04</div>
+<div class="timeline-content"><h3 class="timeline-title" data-en="Delivery" data-tr="Teslimat">Delivery</h3><p class="timeline-desc" data-en="Post-production excellence. Color grading, sound design, and final delivery." data-tr="Post-prod&uuml;ksiyon m&uuml;kemmellli&#287;i. Renk d&uuml;zeltme, ses tasar&#305;m&#305; ve teslimat.">Post-production excellence. Color grading, sound design, and final delivery.</p></div>
+</div>
 </div>
 </section>
 
-<section class="clients">
-<div class="clients-header"><h2 data-en="Trusted By Leading Brands" data-tr="Önde Gelen Markalar Tarafından Tercih Ediliyoruz">Trusted By Leading Brands</h2></div>
-<div class="clients-grid">
+<!-- Clients: Marquee -->
+<section class="clients-marquee">
+<div class="clients-marquee-header"><h2 class="reveal" data-en="Trusted By Leading Brands" data-tr="&Ouml;nde Gelen Markalar Taraf&#305;ndan Tercih Ediliyoruz">Trusted By Leading Brands</h2></div>
+<div class="marquee-track">
 <span class="client-logo">Samsung</span>
 <span class="client-logo">Karaca</span>
 <span class="client-logo">LC Waikiki</span>
-<span class="client-logo">Yeni Rakı</span>
+<span class="client-logo">Yeni Rak&#305;</span>
+<span class="client-logo">Le Cordon Bleu</span>
+<span class="client-logo">Barrus London</span>
+<!-- Duplicate for seamless loop -->
+<span class="client-logo">Samsung</span>
+<span class="client-logo">Karaca</span>
+<span class="client-logo">LC Waikiki</span>
+<span class="client-logo">Yeni Rak&#305;</span>
 <span class="client-logo">Le Cordon Bleu</span>
 <span class="client-logo">Barrus London</span>
 </div>
 </section>
 
+<!-- CTA Banner -->
 <section class="cta-banner">
-<div style="text-align:center;position:relative;z-index:1">
-<h2 style="font-family:var(--font-display);font-size:clamp(2rem,5vw,3.5rem);font-weight:300;margin-bottom:1rem" data-en="Ready to Create Something <em>Remarkable?</em>" data-tr="Olağanüstü Bir Şey Yaratmaya <em>Hazır mısınız?</em>">Ready to Create Something <em>Remarkable?</em></h2>
-<p style="color:var(--white-dim);margin-bottom:2.5rem;font-size:1.1rem" data-en="Let's discuss your next project" data-tr="Bir sonraki projenizi konuşalım">Let's discuss your next project</p>
-<a href="pages/contact.html" class="cta-btn-filled"><span data-en="Get In Touch" data-tr="İletişime Geçin">Get In Touch</span></a>
+<div class="cta-wm-watermark">
+<svg viewBox="0 0 289.9 274.62" xmlns="http://www.w3.org/2000/svg">
+<path fill="rgba(254,243,226,0.05)" d="M174.51,180.15c-16.34-36.26-32.68-72.53-49.03-108.79-12.35,34.31-26.35,76.24-37.06,108.79-2.06-.19-5.15-.39-7.82-.39s-5.15.19-7.62.39c-10.5-38.02-24.29-80.72-36.85-119.91-2.88-7.21-7.82-11.12-14-12.09l.41-3.12c5.76.58,11.53.78,18.73.78h.82c9.27,0,14.82-.19,23.06-.78l.62,3.12c-8.23.78-10.29,5.65-7.62,14.82,8.85,31.2,20.18,69.41,28.41,93.59,12.76-34.9,26.35-75.06,37.06-111.13,2.47.19,5.15.19,7.41.19,2.47,0,5.15,0,7.41-.19,18.28,31.48,36.56,62.96,54.84,94.43-6.26,13.43-12.52,26.86-18.78,40.29Z"/>
+<path fill="rgba(254,243,226,0.08)" d="M115.34,100.11c10.22,21,20.72,42.19,31.51,63.55,9.21,18.25,18.45,36.27,27.71,54.05,19.83-38.74,39.05-80.03,49.79-106.05,5.16.39,10.12.59,15.08.59s9.3-.19,14.05-.59l.62,3.13c-7.64.59-11.98,6.07-11.36,17.22,1.24,22.89,6.82,63.2,12.19,99.98,1.24,9.39,5.58,11.74,11.36,12.33l-.41,3.13c-6.4-.58-13.43-.78-21.07-.78s-15.7.2-21.28.78l-.41-3.13c8.06-1.17,11.36-4.89,10.74-12.52-2.69-31.11-7.23-66.72-10.95-90.79-13.64,26.8-33.67,68.48-51.85,107.61h-4.55c-21.47-36.55-42.93-73.1-64.4-109.66,4.41-12.95,8.83-25.91,13.24-38.86Z"/>
+</svg>
+</div>
+<div style="position:relative;z-index:1">
+<h2 class="reveal" data-en="Ready to Create Something <em>Remarkable?</em>" data-tr="Ola&#287;an&uuml;st&uuml; Bir &#350;ey Yaratmaya <em>Haz&#305;r m&#305;s&#305;n&#305;z?</em>">Ready to Create Something <em>Remarkable?</em></h2>
+<p class="reveal reveal-d1" data-en="Let's discuss your next project" data-tr="Bir sonraki projenizi konu&#351;al&#305;m">Let's discuss your next project</p>
+<a href="pages/contact.html" class="cta-btn-filled reveal reveal-d2"><span data-en="Get In Touch" data-tr="&#304;leti&#351;ime Ge&#231;in">Get In Touch</span></a>
 </div>
 </section>
 
+<!-- Footer -->
 <footer>
-<div class="footer-content">
-<a href="index.html" class="footer-logo-link"><span class="footer-logo-text">World London <span>Media</span></span></a>
+<div class="footer-wm-watermark">
+<svg viewBox="0 0 289.9 274.62" xmlns="http://www.w3.org/2000/svg">
+<path fill="rgba(254,243,226,0.05)" d="M174.51,180.15c-16.34-36.26-32.68-72.53-49.03-108.79-12.35,34.31-26.35,76.24-37.06,108.79-2.06-.19-5.15-.39-7.82-.39s-5.15.19-7.62.39c-10.5-38.02-24.29-80.72-36.85-119.91-2.88-7.21-7.82-11.12-14-12.09l.41-3.12c5.76.58,11.53.78,18.73.78h.82c9.27,0,14.82-.19,23.06-.78l.62,3.12c-8.23.78-10.29,5.65-7.62,14.82,8.85,31.2,20.18,69.41,28.41,93.59,12.76-34.9,26.35-75.06,37.06-111.13,2.47.19,5.15.19,7.41.19,2.47,0,5.15,0,7.41-.19,18.28,31.48,36.56,62.96,54.84,94.43-6.26,13.43-12.52,26.86-18.78,40.29Z"/>
+<path fill="rgba(254,243,226,0.08)" d="M115.34,100.11c10.22,21,20.72,42.19,31.51,63.55,9.21,18.25,18.45,36.27,27.71,54.05,19.83-38.74,39.05-80.03,49.79-106.05,5.16.39,10.12.59,15.08.59s9.3-.19,14.05-.59l.62,3.13c-7.64.59-11.98,6.07-11.36,17.22,1.24,22.89,6.82,63.2,12.19,99.98,1.24,9.39,5.58,11.74,11.36,12.33l-.41,3.13c-6.4-.58-13.43-.78-21.07-.78s-15.7.2-21.28.78l-.41-3.13c8.06-1.17,11.36-4.89,10.74-12.52-2.69-31.11-7.23-66.72-10.95-90.79-13.64,26.8-33.67,68.48-51.85,107.61h-4.55c-21.47-36.55-42.93-73.1-64.4-109.66,4.41-12.95,8.83-25.91,13.24-38.86Z"/>
+</svg>
+</div>
+<div class="footer-grid">
+<div class="footer-brand">
+<a href="index.html" class="footer-logo-link">
+<svg class="wm-mark" viewBox="0 0 289.9 274.62" xmlns="http://www.w3.org/2000/svg">
+<rect x=".5" y=".5" width="288.9" height="273.62" rx="14.44" ry="14.44" fill="rgba(254,243,226,0.1)" stroke="rgba(254,243,226,0.3)" stroke-miterlimit="10" stroke-width="2"/>
+<path fill="rgba(254,243,226,0.6)" d="M174.51,180.15c-16.34-36.26-32.68-72.53-49.03-108.79-12.35,34.31-26.35,76.24-37.06,108.79-2.06-.19-5.15-.39-7.82-.39s-5.15.19-7.62.39c-10.5-38.02-24.29-80.72-36.85-119.91-2.88-7.21-7.82-11.12-14-12.09l.41-3.12c5.76.58,11.53.78,18.73.78h.82c9.27,0,14.82-.19,23.06-.78l.62,3.12c-8.23.78-10.29,5.65-7.62,14.82,8.85,31.2,20.18,69.41,28.41,93.59,12.76-34.9,26.35-75.06,37.06-111.13,2.47.19,5.15.19,7.41.19,2.47,0,5.15,0,7.41-.19,18.28,31.48,36.56,62.96,54.84,94.43-6.26,13.43-12.52,26.86-18.78,40.29Z"/>
+<path fill="var(--orange)" d="M115.34,100.11c10.22,21,20.72,42.19,31.51,63.55,9.21,18.25,18.45,36.27,27.71,54.05,19.83-38.74,39.05-80.03,49.79-106.05,5.16.39,10.12.59,15.08.59s9.3-.19,14.05-.59l.62,3.13c-7.64.59-11.98,6.07-11.36,17.22,1.24,22.89,6.82,63.2,12.19,99.98,1.24,9.39,5.58,11.74,11.36,12.33l-.41,3.13c-6.4-.58-13.43-.78-21.07-.78s-15.7.2-21.28.78l-.41-3.13c8.06-1.17,11.36-4.89,10.74-12.52-2.69-31.11-7.23-66.72-10.95-90.79-13.64,26.8-33.67,68.48-51.85,107.61h-4.55c-21.47-36.55-42.93-73.1-64.4-109.66,4.41-12.95,8.83-25.91,13.24-38.86Z"/>
+</svg>
+<span class="footer-logo-text">World <span>London</span> Media</span>
+</a>
+<p class="footer-tagline" data-en="Premium visual production. London & Izmir." data-tr="Premium g&ouml;rsel prod&uuml;ksiyon. Londra & &#304;zmir.">Premium visual production. London & Izmir.</p>
+</div>
+<div>
+<h4 class="footer-col-title">Navigation</h4>
 <div class="footer-nav">
 <a href="pages/work.html">Work</a>
 <a href="pages/services.html">Services</a>
 <a href="pages/about.html">About</a>
 <a href="pages/contact.html">Contact</a>
 </div>
-<div class="footer-locations"><span>London, UK</span><span class="separator">&bull;</span><span>İzmir, Turkey</span></div>
-<div class="social-links">
+</div>
+<div>
+<h4 class="footer-col-title">Social</h4>
+<div class="footer-social">
 <a href="https://www.instagram.com/worldlondonmedia/" target="_blank">Instagram</a>
 <a href="https://wa.me/447717115002" target="_blank">WhatsApp</a>
 </div>
+</div>
+<div>
+<h4 class="footer-col-title">Locations</h4>
+<div class="footer-locations-list">
+<span>London, UK</span>
+<span>&#304;zmir, Turkey</span>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
 <p class="copyright">&copy; 2025 World London Media. All rights reserved.</p>
+<button class="footer-scroll-top" id="scrollTopBtn">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
 </div>
 </footer>
 

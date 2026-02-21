@@ -7,39 +7,28 @@
 <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body>
 <div class="cursor"></div>
 <div class="cursor-follower"></div>
+<div class="page-transition"></div>
 
+<!-- Navigation -->
 <nav class="nav">
 <a href="../index.html" class="nav-logo-link">
-<div class="wlm-logo">
-<div class="outer-ring"></div>
-<div class="inner-ring"></div>
-<div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div>
-<div class="glow-effect"></div>
-<div class="logo-svg-container">
-<svg class="logo-svg" viewBox="0 0 100 100">
-<defs><linearGradient id="navGoldGradient" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#F5D78E"/><stop offset="50%" stop-color="#D4AF37"/><stop offset="100%" stop-color="#8B6914"/></linearGradient></defs>
-<path class="letter-w" d="M 18 22 L 30 78 L 50 38 L 70 78 L 82 22"/>
-<path class="letter-m" d="M 18 78 L 30 22 L 50 62 L 70 22 L 82 78"/>
+<svg class="wm-mark" viewBox="0 0 289.9 274.62" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="wmGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#fa812f"/><stop offset="50%" stop-color="#c7253e"/>
+<stop offset="100%" stop-color="#821131"/></linearGradient></defs>
+<rect x=".5" y=".5" width="288.9" height="273.62" rx="14.44" ry="14.44" fill="#fef3e2" stroke="#c7253e" stroke-miterlimit="10" stroke-width="4"/>
+<path fill="#1a1a1a" d="M174.51,180.15c-16.34-36.26-32.68-72.53-49.03-108.79-12.35,34.31-26.35,76.24-37.06,108.79-2.06-.19-5.15-.39-7.82-.39s-5.15.19-7.62.39c-10.5-38.02-24.29-80.72-36.85-119.91-2.88-7.21-7.82-11.12-14-12.09l.41-3.12c5.76.58,11.53.78,18.73.78h.82c9.27,0,14.82-.19,23.06-.78l.62,3.12c-8.23.78-10.29,5.65-7.62,14.82,8.85,31.2,20.18,69.41,28.41,93.59,12.76-34.9,26.35-75.06,37.06-111.13,2.47.19,5.15.19,7.41.19,2.47,0,5.15,0,7.41-.19,18.28,31.48,36.56,62.96,54.84,94.43-6.26,13.43-12.52,26.86-18.78,40.29Z"/>
+<path fill="url(#wmGrad)" d="M115.34,100.11c10.22,21,20.72,42.19,31.51,63.55,9.21,18.25,18.45,36.27,27.71,54.05,19.83-38.74,39.05-80.03,49.79-106.05,5.16.39,10.12.59,15.08.59s9.3-.19,14.05-.59l.62,3.13c-7.64.59-11.98,6.07-11.36,17.22,1.24,22.89,6.82,63.2,12.19,99.98,1.24,9.39,5.58,11.74,11.36,12.33l-.41,3.13c-6.4-.58-13.43-.78-21.07-.78s-15.7.2-21.28.78l-.41-3.13c8.06-1.17,11.36-4.89,10.74-12.52-2.69-31.11-7.23-66.72-10.95-90.79-13.64,26.8-33.67,68.48-51.85,107.61h-4.55c-21.47-36.55-42.93-73.1-64.4-109.66,4.41-12.95,8.83-25.91,13.24-38.86Z"/>
 </svg>
-</div>
-<div class="center-orb"></div>
-</div>
-<span class="nav-logo-text">World London <span>Media</span></span>
+<span class="nav-brand-text">World London Media</span>
 </a>
 <div class="nav-right">
-<ul class="nav-links" id="navLinks">
-<li><a href="../index.html" class="nav-link">Home</a></li>
-<li><a href="work.html" class="nav-link">Work</a></li>
-<li><a href="services.html" class="nav-link active">Services</a></li>
-<li><a href="about.html" class="nav-link">About</a></li>
-<li><a href="contact.html" class="nav-link">Contact</a></li>
-</ul>
 <button class="lang-toggle" id="langToggle">
 <span class="lang-current">EN</span><span class="lang-divider">/</span><span class="lang-other">TR</span>
 </button>
@@ -47,50 +36,226 @@
 </div>
 </nav>
 
+<!-- Fullscreen Menu Overlay -->
+<div class="menu-overlay" id="menuOverlay">
+<div class="menu-links">
+<a href="../index.html" class="menu-link"><span class="link-num">01</span>Home</a>
+<a href="work.html" class="menu-link"><span class="link-num">02</span>Work</a>
+<a href="services.html" class="menu-link active"><span class="link-num">03</span>Services</a>
+<a href="about.html" class="menu-link"><span class="link-num">04</span>About</a>
+<a href="contact.html" class="menu-link"><span class="link-num">05</span>Contact</a>
+</div>
+<div class="menu-info">
+<div class="menu-wm-watermark">
+<svg viewBox="0 0 289.9 274.62" xmlns="http://www.w3.org/2000/svg">
+<path fill="rgba(254,243,226,0.05)" d="M174.51,180.15c-16.34-36.26-32.68-72.53-49.03-108.79-12.35,34.31-26.35,76.24-37.06,108.79-2.06-.19-5.15-.39-7.82-.39s-5.15.19-7.62.39c-10.5-38.02-24.29-80.72-36.85-119.91-2.88-7.21-7.82-11.12-14-12.09l.41-3.12c5.76.58,11.53.78,18.73.78h.82c9.27,0,14.82-.19,23.06-.78l.62,3.12c-8.23.78-10.29,5.65-7.62,14.82,8.85,31.2,20.18,69.41,28.41,93.59,12.76-34.9,26.35-75.06,37.06-111.13,2.47.19,5.15.19,7.41.19,2.47,0,5.15,0,7.41-.19,18.28,31.48,36.56,62.96,54.84,94.43-6.26,13.43-12.52,26.86-18.78,40.29Z"/>
+<path fill="rgba(254,243,226,0.08)" d="M115.34,100.11c10.22,21,20.72,42.19,31.51,63.55,9.21,18.25,18.45,36.27,27.71,54.05,19.83-38.74,39.05-80.03,49.79-106.05,5.16.39,10.12.59,15.08.59s9.3-.19,14.05-.59l.62,3.13c-7.64.59-11.98,6.07-11.36,17.22,1.24,22.89,6.82,63.2,12.19,99.98,1.24,9.39,5.58,11.74,11.36,12.33l-.41,3.13c-6.4-.58-13.43-.78-21.07-.78s-15.7.2-21.28.78l-.41-3.13c8.06-1.17,11.36-4.89,10.74-12.52-2.69-31.11-7.23-66.72-10.95-90.79-13.64,26.8-33.67,68.48-51.85,107.61h-4.55c-21.47-36.55-42.93-73.1-64.4-109.66,4.41-12.95,8.83-25.91,13.24-38.86Z"/>
+</svg>
+</div>
+<div class="menu-contact-info">
+<a href="mailto:info@worldlondonmedia.com">info@worldlondonmedia.com</a>
+<p>London, UK &bull; Izmir, Turkey</p>
+<div class="menu-social">
+<a href="https://www.instagram.com/worldlondonmedia/" target="_blank">Instagram</a>
+<a href="https://wa.me/447717115002" target="_blank">WhatsApp</a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Page Hero -->
 <section class="page-hero">
 <div class="page-hero-bg"></div>
+<div class="page-hero-wm">
+<svg viewBox="0 0 289.9 274.62" xmlns="http://www.w3.org/2000/svg">
+<path fill="rgba(199,37,62,0.03)" d="M174.51,180.15c-16.34-36.26-32.68-72.53-49.03-108.79-12.35,34.31-26.35,76.24-37.06,108.79-2.06-.19-5.15-.39-7.82-.39s-5.15.19-7.62.39c-10.5-38.02-24.29-80.72-36.85-119.91-2.88-7.21-7.82-11.12-14-12.09l.41-3.12c5.76.58,11.53.78,18.73.78h.82c9.27,0,14.82-.19,23.06-.78l.62,3.12c-8.23.78-10.29,5.65-7.62,14.82,8.85,31.2,20.18,69.41,28.41,93.59,12.76-34.9,26.35-75.06,37.06-111.13,2.47.19,5.15.19,7.41.19,2.47,0,5.15,0,7.41-.19,18.28,31.48,36.56,62.96,54.84,94.43-6.26,13.43-12.52,26.86-18.78,40.29Z"/>
+<path fill="rgba(199,37,62,0.05)" d="M115.34,100.11c10.22,21,20.72,42.19,31.51,63.55,9.21,18.25,18.45,36.27,27.71,54.05,19.83-38.74,39.05-80.03,49.79-106.05,5.16.39,10.12.59,15.08.59s9.3-.19,14.05-.59l.62,3.13c-7.64.59-11.98,6.07-11.36,17.22,1.24,22.89,6.82,63.2,12.19,99.98,1.24,9.39,5.58,11.74,11.36,12.33l-.41,3.13c-6.4-.58-13.43-.78-21.07-.78s-15.7.2-21.28.78l-.41-3.13c8.06-1.17,11.36-4.89,10.74-12.52-2.69-31.11-7.23-66.72-10.95-90.79-13.64,26.8-33.67,68.48-51.85,107.61h-4.55c-21.47-36.55-42.93-73.1-64.4-109.66,4.41-12.95,8.83-25.91,13.24-38.86Z"/>
+</svg>
+</div>
 <div class="page-hero-content">
-<span class="section-label" data-en="What We Do" data-tr="Ne Yapıyoruz">What We Do</span>
-<h1 data-en="Our <em>Services</em>" data-tr="<em>Hizmetlerimiz</em>">Our <em>Services</em></h1>
-<p data-en="End-to-end visual production and brand storytelling solutions." data-tr="Uçtan uca görsel prodüksiyon ve marka hikaye anlatım çözümleri.">End-to-end visual production and brand storytelling solutions.</p>
+<span class="section-label reveal" data-en="What We Do" data-tr="Ne Yap&#305;yoruz">What We Do</span>
+<h1 class="reveal reveal-d1" data-en="Our <em>Services</em>" data-tr="<em>Hizmetlerimiz</em>">Our <em>Services</em></h1>
+<p class="reveal reveal-d2" data-en="End-to-end visual production and brand storytelling solutions." data-tr="U&#231;tan uca g&ouml;rsel prod&uuml;ksiyon ve marka hikaye anlat&#305;m &#231;&ouml;z&uuml;mleri.">End-to-end visual production and brand storytelling solutions.</p>
 </div>
 </section>
 
-<section class="services-section">
-<div class="services-grid">
-<div class="svc-card"><span class="svc-num">01</span><svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg><h3 class="svc-title" data-en="Brand Films" data-tr="Marka Filmleri">Brand Films</h3><p class="svc-desc" data-en="Cinematic brand storytelling. Corporate documentaries, company profiles, and narrative films." data-tr="Sinematik marka hikayesi anlatımı. Kurumsal belgeseller, şirket tanıtımları.">Cinematic brand storytelling. Corporate documentaries, company profiles, and narrative films.</p></div>
-<div class="svc-card"><span class="svc-num">02</span><svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8" fill="currentColor"/></svg><h3 class="svc-title" data-en="Advertising" data-tr="Reklam">Advertising &amp; Commercials</h3><p class="svc-desc" data-en="High-impact advertising content for television, digital, and social platforms." data-tr="Televizyon, dijital ve sosyal platformlar için yüksek etkili reklam içerikleri.">High-impact advertising content for television, digital, and social platforms.</p></div>
-<div class="svc-card"><span class="svc-num">03</span><svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg><h3 class="svc-title" data-en="3D Visualization" data-tr="3D Görselleştirme">3D Visualization</h3><p class="svc-desc" data-en="Architectural rendering, interior visualization, and product modeling." data-tr="Mimari render, iç mekan görselleştirme ve ürün modelleme.">Architectural rendering, interior visualization, and product modeling.</p></div>
-<div class="svc-card"><span class="svc-num">04</span><svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg><h3 class="svc-title" data-en="Drone Cinematography" data-tr="Drone Çekimleri">Drone Cinematography</h3><p class="svc-desc" data-en="Professional aerial footage with licensed pilots. Real estate aerials and cinematic shots." data-tr="Lisanslı pilotlarla profesyonel hava çekimleri.">Professional aerial footage with licensed pilots. Real estate aerials and cinematic shots.</p></div>
-<div class="svc-card"><span class="svc-num">05</span><svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg><h3 class="svc-title" data-en="Content Production" data-tr="İçerik Üretimi">Content Production</h3><p class="svc-desc" data-en="End-to-end content creation for all platforms. Photography, video, graphics." data-tr="Tüm platformlar için uçtan uca içerik üretimi.">End-to-end content creation for all platforms. Photography, video, graphics.</p></div>
-<div class="svc-card"><span class="svc-num">06</span><svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg><h3 class="svc-title" data-en="Event Coverage" data-tr="Etkinlik Çekimleri">Event Coverage</h3><p class="svc-desc" data-en="Multi-camera event documentation. Corporate gatherings, conferences, and live streaming." data-tr="Çoklu kamera ile etkinlik belgeleme ve canlı yayın.">Multi-camera event documentation. Corporate gatherings, conferences, and live streaming.</p></div>
-<div class="svc-card"><span class="svc-num">07</span><svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg><h3 class="svc-title" data-en="Brand Management" data-tr="Marka Yönetimi">Brand Management</h3><p class="svc-desc" data-en="Strategic brand development and identity management across all touchpoints." data-tr="Stratejik marka geliştirme ve kimlik yönetimi.">Strategic brand development and identity management across all touchpoints.</p></div>
-<div class="svc-card"><span class="svc-num">08</span><svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/></svg><h3 class="svc-title" data-en="Social Media Management" data-tr="Sosyal Medya Yönetimi">Social Media Management</h3><p class="svc-desc" data-en="Full-service social media strategy, content calendars, and campaigns." data-tr="Tam kapsamlı sosyal medya stratejisi ve kampanyalar.">Full-service social media strategy, content calendars, and campaigns.</p></div>
-<div class="svc-card"><span class="svc-num">09</span><svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg><h3 class="svc-title" data-en="Social Media Consulting" data-tr="Sosyal Medya Danışmanlığı">Social Media Consulting</h3><p class="svc-desc" data-en="Expert guidance for your digital presence. Platform strategy and audience analysis." data-tr="Dijital varlığınız için uzman rehberliği.">Expert guidance for your digital presence. Platform strategy and audience analysis.</p></div>
+<!-- Services Accordion (Full 9 Services) -->
+<section class="services-accordion" style="padding:var(--section-padding) var(--container-padding)">
+
+<div class="service-panel reveal">
+<div class="service-panel-header">
+<span class="service-panel-number">01</span>
+<h3 class="service-panel-title" data-en="Brand Films" data-tr="Marka Filmleri">Brand Films</h3>
+<div class="service-panel-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
 </div>
+<div class="service-panel-body"><div class="service-panel-body-inner">
+<svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+<p class="service-panel-desc" data-en="Cinematic brand storytelling. Corporate documentaries, company profiles, and narrative films that capture the essence of your brand." data-tr="Sinematik marka hikayesi anlat&#305;m&#305;. Kurumsal belgeseller, &#351;irket tan&#305;t&#305;mlar&#305; ve markan&#305;z&#305;n &ouml;z&uuml;n&uuml; yakalayan anlat&#305; filmleri.">Cinematic brand storytelling. Corporate documentaries, company profiles, and narrative films that capture the essence of your brand.</p>
+</div></div>
+</div>
+
+<div class="service-panel reveal reveal-d1">
+<div class="service-panel-header">
+<span class="service-panel-number">02</span>
+<h3 class="service-panel-title" data-en="Advertising &amp; Commercials" data-tr="Reklam">Advertising &amp; Commercials</h3>
+<div class="service-panel-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+</div>
+<div class="service-panel-body"><div class="service-panel-body-inner">
+<svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8" fill="currentColor"/></svg>
+<p class="service-panel-desc" data-en="High-impact advertising content for television, digital, and social platforms that drives engagement and delivers measurable results." data-tr="Etkile&#351;im ve &ouml;l&#231;&uuml;lebilir sonu&#231;lar getiren televizyon, dijital ve sosyal platformlar i&#231;in y&uuml;ksek etkili reklam i&#231;erikleri.">High-impact advertising content for television, digital, and social platforms that drives engagement and delivers measurable results.</p>
+</div></div>
+</div>
+
+<div class="service-panel reveal reveal-d2">
+<div class="service-panel-header">
+<span class="service-panel-number">03</span>
+<h3 class="service-panel-title" data-en="3D Visualization" data-tr="3D G&ouml;rselle&#351;tirme">3D Visualization</h3>
+<div class="service-panel-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+</div>
+<div class="service-panel-body"><div class="service-panel-body-inner">
+<svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+<p class="service-panel-desc" data-en="Architectural rendering, interior visualization, and product modeling that brings concepts to life before they're built." data-tr="Konseptleri in&#351;a edilmeden hayata ge&#231;iren mimari render, i&#231; mekan g&ouml;rselle&#351;tirme ve &uuml;r&uuml;n modelleme.">Architectural rendering, interior visualization, and product modeling that brings concepts to life before they're built.</p>
+</div></div>
+</div>
+
+<div class="service-panel reveal">
+<div class="service-panel-header">
+<span class="service-panel-number">04</span>
+<h3 class="service-panel-title" data-en="Drone Cinematography" data-tr="Drone &#199;ekimleri">Drone Cinematography</h3>
+<div class="service-panel-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+</div>
+<div class="service-panel-body"><div class="service-panel-body-inner">
+<svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+<p class="service-panel-desc" data-en="Professional aerial footage with licensed pilots. Real estate aerials, construction monitoring, and breathtaking cinematic shots." data-tr="Lisansl&#305; pilotlarla profesyonel hava &#231;ekimleri. Gayrimenkul, in&#351;aat takibi ve nefes kesen sinematik g&ouml;r&uuml;nt&uuml;ler.">Professional aerial footage with licensed pilots. Real estate aerials, construction monitoring, and breathtaking cinematic shots.</p>
+</div></div>
+</div>
+
+<div class="service-panel reveal reveal-d1">
+<div class="service-panel-header">
+<span class="service-panel-number">05</span>
+<h3 class="service-panel-title" data-en="Content Production" data-tr="&#304;&#231;erik &Uuml;retimi">Content Production</h3>
+<div class="service-panel-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+</div>
+<div class="service-panel-body"><div class="service-panel-body-inner">
+<svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+<p class="service-panel-desc" data-en="End-to-end content creation for all platforms. Photography, video production, graphic design, and motion graphics." data-tr="T&uuml;m platformlar i&#231;in u&#231;tan uca i&#231;erik &uuml;retimi. Foto&#287;raf, video, grafik tasar&#305;m ve motion graphics.">End-to-end content creation for all platforms. Photography, video production, graphic design, and motion graphics.</p>
+</div></div>
+</div>
+
+<div class="service-panel reveal reveal-d2">
+<div class="service-panel-header">
+<span class="service-panel-number">06</span>
+<h3 class="service-panel-title" data-en="Event Coverage" data-tr="Etkinlik &#199;ekimleri">Event Coverage</h3>
+<div class="service-panel-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+</div>
+<div class="service-panel-body"><div class="service-panel-body-inner">
+<svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+<p class="service-panel-desc" data-en="Multi-camera event documentation. Corporate gatherings, conferences, product launches, and live streaming services." data-tr="&#199;oklu kamera ile etkinlik belgeleme. Kurumsal toplant&#305;lar, konferanslar, &uuml;r&uuml;n lansman&#305; ve canl&#305; yay&#305;n.">Multi-camera event documentation. Corporate gatherings, conferences, product launches, and live streaming services.</p>
+</div></div>
+</div>
+
+<div class="service-panel reveal">
+<div class="service-panel-header">
+<span class="service-panel-number">07</span>
+<h3 class="service-panel-title" data-en="Brand Management" data-tr="Marka Y&ouml;netimi">Brand Management</h3>
+<div class="service-panel-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+</div>
+<div class="service-panel-body"><div class="service-panel-body-inner">
+<svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+<p class="service-panel-desc" data-en="Strategic brand development and identity management across all touchpoints. Visual identity, guidelines, and consistent messaging." data-tr="T&uuml;m temas noktalar&#305;nda stratejik marka geli&#351;tirme ve kimlik y&ouml;netimi.">Strategic brand development and identity management across all touchpoints. Visual identity, guidelines, and consistent messaging.</p>
+</div></div>
+</div>
+
+<div class="service-panel reveal reveal-d1">
+<div class="service-panel-header">
+<span class="service-panel-number">08</span>
+<h3 class="service-panel-title" data-en="Social Media Management" data-tr="Sosyal Medya Y&ouml;netimi">Social Media Management</h3>
+<div class="service-panel-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+</div>
+<div class="service-panel-body"><div class="service-panel-body-inner">
+<svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/></svg>
+<p class="service-panel-desc" data-en="Full-service social media strategy, content calendars, community management, and performance-driven campaigns." data-tr="Tam kapsaml&#305; sosyal medya stratejisi, i&#231;erik takvimleri, topluluk y&ouml;netimi ve performans odakl&#305; kampanyalar.">Full-service social media strategy, content calendars, community management, and performance-driven campaigns.</p>
+</div></div>
+</div>
+
+<div class="service-panel reveal reveal-d2">
+<div class="service-panel-header">
+<span class="service-panel-number">09</span>
+<h3 class="service-panel-title" data-en="Social Media Consulting" data-tr="Sosyal Medya Dan&#305;&#351;manl&#305;&#287;&#305;">Social Media Consulting</h3>
+<div class="service-panel-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+</div>
+<div class="service-panel-body"><div class="service-panel-body-inner">
+<svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+<p class="service-panel-desc" data-en="Expert guidance for your digital presence. Platform strategy, audience analysis, and data-driven optimization." data-tr="Dijital varl&#305;&#287;&#305;n&#305;z i&#231;in uzman rehberli&#287;i. Platform stratejisi, kitle analizi ve veriye dayal&#305; optimizasyon.">Expert guidance for your digital presence. Platform strategy, audience analysis, and data-driven optimization.</p>
+</div></div>
+</div>
+
 </section>
 
+<!-- CTA Banner -->
 <section class="cta-banner">
-<h2 data-en="Have a Project in <em>Mind?</em>" data-tr="Aklınızda Bir <em>Proje mi Var?</em>">Have a Project in <em>Mind?</em></h2>
-<p data-en="Let's bring your vision to life." data-tr="Vizyonunuzu hayata geçirelim.">Let's bring your vision to life.</p>
-<a href="contact.html" class="cta-btn-filled"><span data-en="Get In Touch" data-tr="İletişime Geçin">Get In Touch</span></a>
+<div class="cta-wm-watermark">
+<svg viewBox="0 0 289.9 274.62" xmlns="http://www.w3.org/2000/svg">
+<path fill="rgba(254,243,226,0.05)" d="M174.51,180.15c-16.34-36.26-32.68-72.53-49.03-108.79-12.35,34.31-26.35,76.24-37.06,108.79-2.06-.19-5.15-.39-7.82-.39s-5.15.19-7.62.39c-10.5-38.02-24.29-80.72-36.85-119.91-2.88-7.21-7.82-11.12-14-12.09l.41-3.12c5.76.58,11.53.78,18.73.78h.82c9.27,0,14.82-.19,23.06-.78l.62,3.12c-8.23.78-10.29,5.65-7.62,14.82,8.85,31.2,20.18,69.41,28.41,93.59,12.76-34.9,26.35-75.06,37.06-111.13,2.47.19,5.15.19,7.41.19,2.47,0,5.15,0,7.41-.19,18.28,31.48,36.56,62.96,54.84,94.43-6.26,13.43-12.52,26.86-18.78,40.29Z"/>
+<path fill="rgba(254,243,226,0.08)" d="M115.34,100.11c10.22,21,20.72,42.19,31.51,63.55,9.21,18.25,18.45,36.27,27.71,54.05,19.83-38.74,39.05-80.03,49.79-106.05,5.16.39,10.12.59,15.08.59s9.3-.19,14.05-.59l.62,3.13c-7.64.59-11.98,6.07-11.36,17.22,1.24,22.89,6.82,63.2,12.19,99.98,1.24,9.39,5.58,11.74,11.36,12.33l-.41,3.13c-6.4-.58-13.43-.78-21.07-.78s-15.7.2-21.28.78l-.41-3.13c8.06-1.17,11.36-4.89,10.74-12.52-2.69-31.11-7.23-66.72-10.95-90.79-13.64,26.8-33.67,68.48-51.85,107.61h-4.55c-21.47-36.55-42.93-73.1-64.4-109.66,4.41-12.95,8.83-25.91,13.24-38.86Z"/>
+</svg>
+</div>
+<div style="position:relative;z-index:1">
+<h2 class="reveal" data-en="Have a Project in <em>Mind?</em>" data-tr="Akl&#305;n&#305;zda Bir <em>Proje mi Var?</em>">Have a Project in <em>Mind?</em></h2>
+<p class="reveal reveal-d1" data-en="Let's bring your vision to life." data-tr="Vizyonunuzu hayata ge&#231;irelim.">Let's bring your vision to life.</p>
+<a href="contact.html" class="cta-btn-filled reveal reveal-d2"><span data-en="Get In Touch" data-tr="&#304;leti&#351;ime Ge&#231;in">Get In Touch</span></a>
+</div>
 </section>
 
+<!-- Footer -->
 <footer>
-<div class="footer-content">
-<a href="../index.html" class="footer-logo-link"><span class="footer-logo-text">World London <span>Media</span></span></a>
+<div class="footer-wm-watermark">
+<svg viewBox="0 0 289.9 274.62" xmlns="http://www.w3.org/2000/svg">
+<path fill="rgba(254,243,226,0.05)" d="M174.51,180.15c-16.34-36.26-32.68-72.53-49.03-108.79-12.35,34.31-26.35,76.24-37.06,108.79-2.06-.19-5.15-.39-7.82-.39s-5.15.19-7.62.39c-10.5-38.02-24.29-80.72-36.85-119.91-2.88-7.21-7.82-11.12-14-12.09l.41-3.12c5.76.58,11.53.78,18.73.78h.82c9.27,0,14.82-.19,23.06-.78l.62,3.12c-8.23.78-10.29,5.65-7.62,14.82,8.85,31.2,20.18,69.41,28.41,93.59,12.76-34.9,26.35-75.06,37.06-111.13,2.47.19,5.15.19,7.41.19,2.47,0,5.15,0,7.41-.19,18.28,31.48,36.56,62.96,54.84,94.43-6.26,13.43-12.52,26.86-18.78,40.29Z"/>
+<path fill="rgba(254,243,226,0.08)" d="M115.34,100.11c10.22,21,20.72,42.19,31.51,63.55,9.21,18.25,18.45,36.27,27.71,54.05,19.83-38.74,39.05-80.03,49.79-106.05,5.16.39,10.12.59,15.08.59s9.3-.19,14.05-.59l.62,3.13c-7.64.59-11.98,6.07-11.36,17.22,1.24,22.89,6.82,63.2,12.19,99.98,1.24,9.39,5.58,11.74,11.36,12.33l-.41,3.13c-6.4-.58-13.43-.78-21.07-.78s-15.7.2-21.28.78l-.41-3.13c8.06-1.17,11.36-4.89,10.74-12.52-2.69-31.11-7.23-66.72-10.95-90.79-13.64,26.8-33.67,68.48-51.85,107.61h-4.55c-21.47-36.55-42.93-73.1-64.4-109.66,4.41-12.95,8.83-25.91,13.24-38.86Z"/>
+</svg>
+</div>
+<div class="footer-grid">
+<div class="footer-brand">
+<a href="../index.html" class="footer-logo-link">
+<svg class="wm-mark" viewBox="0 0 289.9 274.62" xmlns="http://www.w3.org/2000/svg">
+<rect x=".5" y=".5" width="288.9" height="273.62" rx="14.44" ry="14.44" fill="rgba(254,243,226,0.1)" stroke="rgba(254,243,226,0.3)" stroke-miterlimit="10" stroke-width="2"/>
+<path fill="rgba(254,243,226,0.6)" d="M174.51,180.15c-16.34-36.26-32.68-72.53-49.03-108.79-12.35,34.31-26.35,76.24-37.06,108.79-2.06-.19-5.15-.39-7.82-.39s-5.15.19-7.62.39c-10.5-38.02-24.29-80.72-36.85-119.91-2.88-7.21-7.82-11.12-14-12.09l.41-3.12c5.76.58,11.53.78,18.73.78h.82c9.27,0,14.82-.19,23.06-.78l.62,3.12c-8.23.78-10.29,5.65-7.62,14.82,8.85,31.2,20.18,69.41,28.41,93.59,12.76-34.9,26.35-75.06,37.06-111.13,2.47.19,5.15.19,7.41.19,2.47,0,5.15,0,7.41-.19,18.28,31.48,36.56,62.96,54.84,94.43-6.26,13.43-12.52,26.86-18.78,40.29Z"/>
+<path fill="var(--orange)" d="M115.34,100.11c10.22,21,20.72,42.19,31.51,63.55,9.21,18.25,18.45,36.27,27.71,54.05,19.83-38.74,39.05-80.03,49.79-106.05,5.16.39,10.12.59,15.08.59s9.3-.19,14.05-.59l.62,3.13c-7.64.59-11.98,6.07-11.36,17.22,1.24,22.89,6.82,63.2,12.19,99.98,1.24,9.39,5.58,11.74,11.36,12.33l-.41,3.13c-6.4-.58-13.43-.78-21.07-.78s-15.7.2-21.28.78l-.41-3.13c8.06-1.17,11.36-4.89,10.74-12.52-2.69-31.11-7.23-66.72-10.95-90.79-13.64,26.8-33.67,68.48-51.85,107.61h-4.55c-21.47-36.55-42.93-73.1-64.4-109.66,4.41-12.95,8.83-25.91,13.24-38.86Z"/>
+</svg>
+<span class="footer-logo-text">World <span>London</span> Media</span>
+</a>
+<p class="footer-tagline" data-en="Premium visual production. London &amp; Izmir." data-tr="Premium g&ouml;rsel prod&uuml;ksiyon. Londra &amp; &#304;zmir.">Premium visual production. London &amp; Izmir.</p>
+</div>
+<div>
+<h4 class="footer-col-title">Navigation</h4>
 <div class="footer-nav">
 <a href="work.html">Work</a>
 <a href="services.html">Services</a>
 <a href="about.html">About</a>
 <a href="contact.html">Contact</a>
 </div>
-<div class="footer-locations"><span>London, UK</span><span class="separator">&bull;</span><span>İzmir, Turkey</span></div>
-<div class="social-links">
+</div>
+<div>
+<h4 class="footer-col-title">Social</h4>
+<div class="footer-social">
 <a href="https://www.instagram.com/worldlondonmedia/" target="_blank">Instagram</a>
 <a href="https://wa.me/447717115002" target="_blank">WhatsApp</a>
 </div>
+</div>
+<div>
+<h4 class="footer-col-title">Locations</h4>
+<div class="footer-locations-list">
+<span>London, UK</span>
+<span>&#304;zmir, Turkey</span>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
 <p class="copyright">&copy; 2025 World London Media. All rights reserved.</p>
+<button class="footer-scroll-top" id="scrollTopBtn">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
 </div>
 </footer>
 

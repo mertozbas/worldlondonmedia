@@ -1,41 +1,50 @@
+/* WM Logomark SVG Stroke Draw Loader */
 function initLoader() {
-  const loader = document.getElementById("loader");
-
+  var loader = document.getElementById("loader");
   if (!loader) return;
 
-  const pb = loader.querySelector(".loader-progress-bar");
-  const ct = loader.querySelector(".loader-counter");
-  const chars = loader.querySelectorAll(".loader-logo span");
+  var wmW = loader.querySelector(".wm-w");
+  var wmM = loader.querySelector(".wm-m");
+  var counter = loader.querySelector(".loader-counter");
+  var progressBar = loader.querySelector(".loader-progress-bar");
 
-  chars.forEach((c, i) => {
-    setTimeout(() => {
-      c.style.transform = "translateY(0)";
-      c.style.opacity = "1";
-      c.style.transition = "transform .6s cubic-bezier(.16,1,.3,1), opacity .6s ease";
-    }, i * 50);
-  });
+  if (!wmW || !wmM) return;
 
-  let p = 0;
+  // Calculate path lengths
+  var wLen = wmW.getTotalLength();
+  var mLen = wmM.getTotalLength();
 
-  const iv = setInterval(() => {
-    p += Math.random() * 15;
-    if (p > 100) p = 100;
+  // Set initial stroke-dash (fully hidden)
+  wmW.style.strokeDasharray = wLen;
+  wmW.style.strokeDashoffset = wLen;
+  wmM.style.strokeDasharray = mLen;
+  wmM.style.strokeDashoffset = mLen;
 
-    if (pb) pb.style.width = p + "%";
-    if (ct) ct.textContent = Math.round(p) + "%";
+  var progress = 0;
+  var interval = setInterval(function () {
+    progress += Math.random() * 10 + 2;
+    if (progress > 100) progress = 100;
 
-    if (p === 100) {
-      clearInterval(iv);
-      setTimeout(() => {
-        loader.style.opacity = "0";
-        loader.style.transition = "opacity 0.8s ease";
-        setTimeout(() => (loader.style.display = "none"), 800);
+    // Animate stroke reveal based on progress
+    wmW.style.strokeDashoffset = wLen * (1 - progress / 100);
+    wmM.style.strokeDashoffset = mLen * (1 - progress / 100);
+
+    if (progressBar) progressBar.style.width = progress + "%";
+    if (counter) counter.textContent = Math.round(progress) + "%";
+
+    if (progress >= 100) {
+      clearInterval(interval);
+      setTimeout(function () {
+        loader.classList.add("loader-done");
+        setTimeout(function () {
+          loader.style.display = "none";
+        }, 800);
       }, 300);
     }
-  }, 50);
+  }, 45);
 }
 
-// Run when DOM is ready, or immediately if already loaded
+// Run when DOM is ready
 if (document.readyState === "loading") {
   document.addEventListener("DOMContentLoaded", initLoader);
 } else {

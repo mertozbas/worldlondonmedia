@@ -7,39 +7,28 @@
 <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body>
 <div class="cursor"></div>
 <div class="cursor-follower"></div>
+<div class="page-transition"></div>
 
+<!-- Navigation -->
 <nav class="nav">
 <a href="../index.html" class="nav-logo-link">
-<div class="wlm-logo">
-<div class="outer-ring"></div>
-<div class="inner-ring"></div>
-<div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div>
-<div class="glow-effect"></div>
-<div class="logo-svg-container">
-<svg class="logo-svg" viewBox="0 0 100 100">
-<defs><linearGradient id="navGoldGradient" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#F5D78E"/><stop offset="50%" stop-color="#D4AF37"/><stop offset="100%" stop-color="#8B6914"/></linearGradient></defs>
-<path class="letter-w" d="M 18 22 L 30 78 L 50 38 L 70 78 L 82 22"/>
-<path class="letter-m" d="M 18 78 L 30 22 L 50 62 L 70 22 L 82 78"/>
+<svg class="wm-mark" viewBox="0 0 289.9 274.62" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="wmGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#fa812f"/><stop offset="50%" stop-color="#c7253e"/>
+<stop offset="100%" stop-color="#821131"/></linearGradient></defs>
+<rect x=".5" y=".5" width="288.9" height="273.62" rx="14.44" ry="14.44" fill="#fef3e2" stroke="#c7253e" stroke-miterlimit="10" stroke-width="4"/>
+<path fill="#1a1a1a" d="M174.51,180.15c-16.34-36.26-32.68-72.53-49.03-108.79-12.35,34.31-26.35,76.24-37.06,108.79-2.06-.19-5.15-.39-7.82-.39s-5.15.19-7.62.39c-10.5-38.02-24.29-80.72-36.85-119.91-2.88-7.21-7.82-11.12-14-12.09l.41-3.12c5.76.58,11.53.78,18.73.78h.82c9.27,0,14.82-.19,23.06-.78l.62,3.12c-8.23.78-10.29,5.65-7.62,14.82,8.85,31.2,20.18,69.41,28.41,93.59,12.76-34.9,26.35-75.06,37.06-111.13,2.47.19,5.15.19,7.41.19,2.47,0,5.15,0,7.41-.19,18.28,31.48,36.56,62.96,54.84,94.43-6.26,13.43-12.52,26.86-18.78,40.29Z"/>
+<path fill="url(#wmGrad)" d="M115.34,100.11c10.22,21,20.72,42.19,31.51,63.55,9.21,18.25,18.45,36.27,27.71,54.05,19.83-38.74,39.05-80.03,49.79-106.05,5.16.39,10.12.59,15.08.59s9.3-.19,14.05-.59l.62,3.13c-7.64.59-11.98,6.07-11.36,17.22,1.24,22.89,6.82,63.2,12.19,99.98,1.24,9.39,5.58,11.74,11.36,12.33l-.41,3.13c-6.4-.58-13.43-.78-21.07-.78s-15.7.2-21.28.78l-.41-3.13c8.06-1.17,11.36-4.89,10.74-12.52-2.69-31.11-7.23-66.72-10.95-90.79-13.64,26.8-33.67,68.48-51.85,107.61h-4.55c-21.47-36.55-42.93-73.1-64.4-109.66,4.41-12.95,8.83-25.91,13.24-38.86Z"/>
 </svg>
-</div>
-<div class="center-orb"></div>
-</div>
-<span class="nav-logo-text">World London <span>Media</span></span>
+<span class="nav-brand-text">World London Media</span>
 </a>
 <div class="nav-right">
-<ul class="nav-links" id="navLinks">
-<li><a href="../index.html" class="nav-link">Home</a></li>
-<li><a href="work.html" class="nav-link">Work</a></li>
-<li><a href="services.html" class="nav-link">Services</a></li>
-<li><a href="about.html" class="nav-link">About</a></li>
-<li><a href="contact.html" class="nav-link active">Contact</a></li>
-</ul>
 <button class="lang-toggle" id="langToggle">
 <span class="lang-current">EN</span><span class="lang-divider">/</span><span class="lang-other">TR</span>
 </button>
@@ -47,21 +36,48 @@
 </div>
 </nav>
 
-<section class="page-hero">
-<div class="page-hero-bg"></div>
-<div class="page-hero-content">
-<span class="section-label" data-en="Get In Touch" data-tr="İletişime Geçin">Get In Touch</span>
-<h1 data-en="Let's <em>Talk</em>" data-tr="<em>Konuşalım</em>">Let's <em>Talk</em></h1>
-<p data-en="Ready to start your next project? We'd love to hear from you." data-tr="Bir sonraki projenize başlamaya hazır mısınız? Sizden haber almak isteriz.">Ready to start your next project? We'd love to hear from you.</p>
+<!-- Fullscreen Menu Overlay -->
+<div class="menu-overlay" id="menuOverlay">
+<div class="menu-links">
+<a href="../index.html" class="menu-link"><span class="link-num">01</span>Home</a>
+<a href="work.html" class="menu-link"><span class="link-num">02</span>Work</a>
+<a href="services.html" class="menu-link"><span class="link-num">03</span>Services</a>
+<a href="about.html" class="menu-link"><span class="link-num">04</span>About</a>
+<a href="contact.html" class="menu-link active"><span class="link-num">05</span>Contact</a>
 </div>
-</section>
+<div class="menu-info">
+<div class="menu-wm-watermark">
+<svg viewBox="0 0 289.9 274.62" xmlns="http://www.w3.org/2000/svg">
+<path fill="rgba(254,243,226,0.05)" d="M174.51,180.15c-16.34-36.26-32.68-72.53-49.03-108.79-12.35,34.31-26.35,76.24-37.06,108.79-2.06-.19-5.15-.39-7.82-.39s-5.15.19-7.62.39c-10.5-38.02-24.29-80.72-36.85-119.91-2.88-7.21-7.82-11.12-14-12.09l.41-3.12c5.76.58,11.53.78,18.73.78h.82c9.27,0,14.82-.19,23.06-.78l.62,3.12c-8.23.78-10.29,5.65-7.62,14.82,8.85,31.2,20.18,69.41,28.41,93.59,12.76-34.9,26.35-75.06,37.06-111.13,2.47.19,5.15.19,7.41.19,2.47,0,5.15,0,7.41-.19,18.28,31.48,36.56,62.96,54.84,94.43-6.26,13.43-12.52,26.86-18.78,40.29Z"/>
+<path fill="rgba(254,243,226,0.08)" d="M115.34,100.11c10.22,21,20.72,42.19,31.51,63.55,9.21,18.25,18.45,36.27,27.71,54.05,19.83-38.74,39.05-80.03,49.79-106.05,5.16.39,10.12.59,15.08.59s9.3-.19,14.05-.59l.62,3.13c-7.64.59-11.98,6.07-11.36,17.22,1.24,22.89,6.82,63.2,12.19,99.98,1.24,9.39,5.58,11.74,11.36,12.33l-.41,3.13c-6.4-.58-13.43-.78-21.07-.78s-15.7.2-21.28.78l-.41-3.13c8.06-1.17,11.36-4.89,10.74-12.52-2.69-31.11-7.23-66.72-10.95-90.79-13.64,26.8-33.67,68.48-51.85,107.61h-4.55c-21.47-36.55-42.93-73.1-64.4-109.66,4.41-12.95,8.83-25.91,13.24-38.86Z"/>
+</svg>
+</div>
+<div class="menu-contact-info">
+<a href="mailto:info@worldlondonmedia.com">info@worldlondonmedia.com</a>
+<p>London, UK &bull; Izmir, Turkey</p>
+<div class="menu-social">
+<a href="https://www.instagram.com/worldlondonmedia/" target="_blank">Instagram</a>
+<a href="https://wa.me/447717115002" target="_blank">WhatsApp</a>
+</div>
+</div>
+</div>
+</div>
 
-<section class="contact-section">
-<div class="contact-grid">
-<div class="contact-info">
-<span class="section-label" data-en="Contact Information" data-tr="İletişim Bilgileri">Contact Information</span>
-<h2 data-en="Let's Create<br>Something <em>Remarkable</em>" data-tr="Olağanüstü Bir Şey<br><em>Yaratalım</em>">Let's Create<br>Something <em>Remarkable</em></h2>
-<p data-en="Operating from London and Izmir, we bring world-class visual production to brands across the globe." data-tr="Londra ve İzmir'den faaliyet göstererek, dünya çapında görsel prodüksiyon sunuyoruz.">Operating from London and Izmir, we bring world-class visual production to brands across the globe.</p>
+<!-- Contact Split Screen -->
+<section class="contact-split">
+
+<!-- Left Panel: Burgundy -->
+<div class="contact-left">
+<div class="contact-wm-watermark">
+<svg viewBox="0 0 289.9 274.62" xmlns="http://www.w3.org/2000/svg">
+<path fill="rgba(254,243,226,0.05)" d="M174.51,180.15c-16.34-36.26-32.68-72.53-49.03-108.79-12.35,34.31-26.35,76.24-37.06,108.79-2.06-.19-5.15-.39-7.82-.39s-5.15.19-7.62.39c-10.5-38.02-24.29-80.72-36.85-119.91-2.88-7.21-7.82-11.12-14-12.09l.41-3.12c5.76.58,11.53.78,18.73.78h.82c9.27,0,14.82-.19,23.06-.78l.62,3.12c-8.23.78-10.29,5.65-7.62,14.82,8.85,31.2,20.18,69.41,28.41,93.59,12.76-34.9,26.35-75.06,37.06-111.13,2.47.19,5.15.19,7.41.19,2.47,0,5.15,0,7.41-.19,18.28,31.48,36.56,62.96,54.84,94.43-6.26,13.43-12.52,26.86-18.78,40.29Z"/>
+<path fill="rgba(254,243,226,0.08)" d="M115.34,100.11c10.22,21,20.72,42.19,31.51,63.55,9.21,18.25,18.45,36.27,27.71,54.05,19.83-38.74,39.05-80.03,49.79-106.05,5.16.39,10.12.59,15.08.59s9.3-.19,14.05-.59l.62,3.13c-7.64.59-11.98,6.07-11.36,17.22,1.24,22.89,6.82,63.2,12.19,99.98,1.24,9.39,5.58,11.74,11.36,12.33l-.41,3.13c-6.4-.58-13.43-.78-21.07-.78s-15.7.2-21.28.78l-.41-3.13c8.06-1.17,11.36-4.89,10.74-12.52-2.69-31.11-7.23-66.72-10.95-90.79-13.64,26.8-33.67,68.48-51.85,107.61h-4.55c-21.47-36.55-42.93-73.1-64.4-109.66,4.41-12.95,8.83-25.91,13.24-38.86Z"/>
+</svg>
+</div>
+<span class="section-label" data-en="Get In Touch" data-tr="&#304;leti&#351;ime Ge&#231;in">Get In Touch</span>
+<h1 data-en="Let's <em>Talk</em>" data-tr="<em>Konu&#351;al&#305;m</em>">Let's <em>Talk</em></h1>
+<p data-en="Ready to start your next project? We'd love to hear from you." data-tr="Bir sonraki projenize ba&#351;lamaya haz&#305;r m&#305;s&#305;n&#305;z? Sizden haber almak isteriz.">Ready to start your next project? We'd love to hear from you.</p>
+
 <div class="contact-details">
 <div class="contact-item">
 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
@@ -83,11 +99,15 @@
 </div>
 </div>
 </div>
+</div>
 
+<!-- Right Panel: Cream with Form -->
+<div class="contact-right">
+<h2 data-en="Send Us a <em>Message</em>" data-tr="Bize <em>Mesaj</em> G&ouml;nderin">Send Us a <em>Message</em></h2>
 <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
 <div class="form-group">
 <input type="text" id="name" name="name" placeholder=" " required>
-<label for="name" data-en="Your Name" data-tr="Adınız">Your Name</label>
+<label for="name" data-en="Your Name" data-tr="Ad&#305;n&#305;z">Your Name</label>
 </div>
 <div class="form-group">
 <input type="email" id="email" name="email" placeholder=" " required>
@@ -95,12 +115,12 @@
 </div>
 <div class="form-group">
 <input type="text" id="company" name="company" placeholder=" ">
-<label for="company" data-en="Company (Optional)" data-tr="Şirket (İsteğe Bağlı)">Company (Optional)</label>
+<label for="company" data-en="Company (Optional)" data-tr="&#350;irket (&#304;ste&#287;e Ba&#287;l&#305;)">Company (Optional)</label>
 </div>
 <div class="form-group form-group-select">
-<label for="service" data-en="Service Interest" data-tr="İlgilendiğiniz Hizmet">Service Interest</label>
+<label for="service" data-en="Service Interest" data-tr="&#304;lgilendi&#287;iniz Hizmet">Service Interest</label>
 <select id="service" name="service">
-<option value="" data-en="Select a service..." data-tr="Bir hizmet seçin...">Select a service...</option>
+<option value="" data-en="Select a service..." data-tr="Bir hizmet se&#231;in...">Select a service...</option>
 <option value="brand-film">Brand Films</option>
 <option value="advertising">Advertising</option>
 <option value="3d-viz">3D Visualization</option>
@@ -110,28 +130,63 @@
 </div>
 <div class="form-group">
 <textarea id="message" name="message" placeholder=" " required></textarea>
-<label for="message" data-en="Tell Us About Your Project" data-tr="Projeniz Hakkında Bilgi Verin">Tell Us About Your Project</label>
+<label for="message" data-en="Tell Us About Your Project" data-tr="Projeniz Hakk&#305;nda Bilgi Verin">Tell Us About Your Project</label>
 </div>
-<button type="submit" class="submit-btn"><span data-en="Send Message" data-tr="Mesaj Gönder">Send Message</span></button>
+<button type="submit" class="submit-btn"><span data-en="Send Message" data-tr="Mesaj G&ouml;nder">Send Message</span></button>
 </form>
 </div>
+
 </section>
 
+<!-- Footer -->
 <footer>
-<div class="footer-content">
-<a href="../index.html" class="footer-logo-link"><span class="footer-logo-text">World London <span>Media</span></span></a>
+<div class="footer-wm-watermark">
+<svg viewBox="0 0 289.9 274.62" xmlns="http://www.w3.org/2000/svg">
+<path fill="rgba(254,243,226,0.05)" d="M174.51,180.15c-16.34-36.26-32.68-72.53-49.03-108.79-12.35,34.31-26.35,76.24-37.06,108.79-2.06-.19-5.15-.39-7.82-.39s-5.15.19-7.62.39c-10.5-38.02-24.29-80.72-36.85-119.91-2.88-7.21-7.82-11.12-14-12.09l.41-3.12c5.76.58,11.53.78,18.73.78h.82c9.27,0,14.82-.19,23.06-.78l.62,3.12c-8.23.78-10.29,5.65-7.62,14.82,8.85,31.2,20.18,69.41,28.41,93.59,12.76-34.9,26.35-75.06,37.06-111.13,2.47.19,5.15.19,7.41.19,2.47,0,5.15,0,7.41-.19,18.28,31.48,36.56,62.96,54.84,94.43-6.26,13.43-12.52,26.86-18.78,40.29Z"/>
+<path fill="rgba(254,243,226,0.08)" d="M115.34,100.11c10.22,21,20.72,42.19,31.51,63.55,9.21,18.25,18.45,36.27,27.71,54.05,19.83-38.74,39.05-80.03,49.79-106.05,5.16.39,10.12.59,15.08.59s9.3-.19,14.05-.59l.62,3.13c-7.64.59-11.98,6.07-11.36,17.22,1.24,22.89,6.82,63.2,12.19,99.98,1.24,9.39,5.58,11.74,11.36,12.33l-.41,3.13c-6.4-.58-13.43-.78-21.07-.78s-15.7.2-21.28.78l-.41-3.13c8.06-1.17,11.36-4.89,10.74-12.52-2.69-31.11-7.23-66.72-10.95-90.79-13.64,26.8-33.67,68.48-51.85,107.61h-4.55c-21.47-36.55-42.93-73.1-64.4-109.66,4.41-12.95,8.83-25.91,13.24-38.86Z"/>
+</svg>
+</div>
+<div class="footer-grid">
+<div class="footer-brand">
+<a href="../index.html" class="footer-logo-link">
+<svg class="wm-mark" viewBox="0 0 289.9 274.62" xmlns="http://www.w3.org/2000/svg">
+<rect x=".5" y=".5" width="288.9" height="273.62" rx="14.44" ry="14.44" fill="rgba(254,243,226,0.1)" stroke="rgba(254,243,226,0.3)" stroke-miterlimit="10" stroke-width="2"/>
+<path fill="rgba(254,243,226,0.6)" d="M174.51,180.15c-16.34-36.26-32.68-72.53-49.03-108.79-12.35,34.31-26.35,76.24-37.06,108.79-2.06-.19-5.15-.39-7.82-.39s-5.15.19-7.62.39c-10.5-38.02-24.29-80.72-36.85-119.91-2.88-7.21-7.82-11.12-14-12.09l.41-3.12c5.76.58,11.53.78,18.73.78h.82c9.27,0,14.82-.19,23.06-.78l.62,3.12c-8.23.78-10.29,5.65-7.62,14.82,8.85,31.2,20.18,69.41,28.41,93.59,12.76-34.9,26.35-75.06,37.06-111.13,2.47.19,5.15.19,7.41.19,2.47,0,5.15,0,7.41-.19,18.28,31.48,36.56,62.96,54.84,94.43-6.26,13.43-12.52,26.86-18.78,40.29Z"/>
+<path fill="var(--orange)" d="M115.34,100.11c10.22,21,20.72,42.19,31.51,63.55,9.21,18.25,18.45,36.27,27.71,54.05,19.83-38.74,39.05-80.03,49.79-106.05,5.16.39,10.12.59,15.08.59s9.3-.19,14.05-.59l.62,3.13c-7.64.59-11.98,6.07-11.36,17.22,1.24,22.89,6.82,63.2,12.19,99.98,1.24,9.39,5.58,11.74,11.36,12.33l-.41,3.13c-6.4-.58-13.43-.78-21.07-.78s-15.7.2-21.28.78l-.41-3.13c8.06-1.17,11.36-4.89,10.74-12.52-2.69-31.11-7.23-66.72-10.95-90.79-13.64,26.8-33.67,68.48-51.85,107.61h-4.55c-21.47-36.55-42.93-73.1-64.4-109.66,4.41-12.95,8.83-25.91,13.24-38.86Z"/>
+</svg>
+<span class="footer-logo-text">World <span>London</span> Media</span>
+</a>
+<p class="footer-tagline" data-en="Premium visual production. London &amp; Izmir." data-tr="Premium g&ouml;rsel prod&uuml;ksiyon. Londra &amp; &#304;zmir.">Premium visual production. London &amp; Izmir.</p>
+</div>
+<div>
+<h4 class="footer-col-title">Navigation</h4>
 <div class="footer-nav">
 <a href="work.html">Work</a>
 <a href="services.html">Services</a>
 <a href="about.html">About</a>
 <a href="contact.html">Contact</a>
 </div>
-<div class="footer-locations"><span>London, UK</span><span class="separator">&bull;</span><span>İzmir, Turkey</span></div>
-<div class="social-links">
+</div>
+<div>
+<h4 class="footer-col-title">Social</h4>
+<div class="footer-social">
 <a href="https://www.instagram.com/worldlondonmedia/" target="_blank">Instagram</a>
 <a href="https://wa.me/447717115002" target="_blank">WhatsApp</a>
 </div>
+</div>
+<div>
+<h4 class="footer-col-title">Locations</h4>
+<div class="footer-locations-list">
+<span>London, UK</span>
+<span>&#304;zmir, Turkey</span>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
 <p class="copyright">&copy; 2025 World London Media. All rights reserved.</p>
+<button class="footer-scroll-top" id="scrollTopBtn">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
 </div>
 </footer>
 

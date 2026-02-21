@@ -7,39 +7,28 @@
 <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body>
 <div class="cursor"></div>
 <div class="cursor-follower"></div>
+<div class="page-transition"></div>
 
+<!-- Navigation -->
 <nav class="nav">
 <a href="../index.html" class="nav-logo-link">
-<div class="wlm-logo">
-<div class="outer-ring"></div>
-<div class="inner-ring"></div>
-<div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div>
-<div class="glow-effect"></div>
-<div class="logo-svg-container">
-<svg class="logo-svg" viewBox="0 0 100 100">
-<defs><linearGradient id="navGoldGradient" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#F5D78E"/><stop offset="50%" stop-color="#D4AF37"/><stop offset="100%" stop-color="#8B6914"/></linearGradient></defs>
-<path class="letter-w" d="M 18 22 L 30 78 L 50 38 L 70 78 L 82 22"/>
-<path class="letter-m" d="M 18 78 L 30 22 L 50 62 L 70 22 L 82 78"/>
+<svg class="wm-mark" viewBox="0 0 289.9 274.62" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="wmGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#fa812f"/><stop offset="50%" stop-color="#c7253e"/>
+<stop offset="100%" stop-color="#821131"/></linearGradient></defs>
+<rect x=".5" y=".5" width="288.9" height="273.62" rx="14.44" ry="14.44" fill="#fef3e2" stroke="#c7253e" stroke-miterlimit="10" stroke-width="4"/>
+<path fill="#1a1a1a" d="M174.51,180.15c-16.34-36.26-32.68-72.53-49.03-108.79-12.35,34.31-26.35,76.24-37.06,108.79-2.06-.19-5.15-.39-7.82-.39s-5.15.19-7.62.39c-10.5-38.02-24.29-80.72-36.85-119.91-2.88-7.21-7.82-11.12-14-12.09l.41-3.12c5.76.58,11.53.78,18.73.78h.82c9.27,0,14.82-.19,23.06-.78l.62,3.12c-8.23.78-10.29,5.65-7.62,14.82,8.85,31.2,20.18,69.41,28.41,93.59,12.76-34.9,26.35-75.06,37.06-111.13,2.47.19,5.15.19,7.41.19,2.47,0,5.15,0,7.41-.19,18.28,31.48,36.56,62.96,54.84,94.43-6.26,13.43-12.52,26.86-18.78,40.29Z"/>
+<path fill="url(#wmGrad)" d="M115.34,100.11c10.22,21,20.72,42.19,31.51,63.55,9.21,18.25,18.45,36.27,27.71,54.05,19.83-38.74,39.05-80.03,49.79-106.05,5.16.39,10.12.59,15.08.59s9.3-.19,14.05-.59l.62,3.13c-7.64.59-11.98,6.07-11.36,17.22,1.24,22.89,6.82,63.2,12.19,99.98,1.24,9.39,5.58,11.74,11.36,12.33l-.41,3.13c-6.4-.58-13.43-.78-21.07-.78s-15.7.2-21.28.78l-.41-3.13c8.06-1.17,11.36-4.89,10.74-12.52-2.69-31.11-7.23-66.72-10.95-90.79-13.64,26.8-33.67,68.48-51.85,107.61h-4.55c-21.47-36.55-42.93-73.1-64.4-109.66,4.41-12.95,8.83-25.91,13.24-38.86Z"/>
 </svg>
-</div>
-<div class="center-orb"></div>
-</div>
-<span class="nav-logo-text">World London <span>Media</span></span>
+<span class="nav-brand-text">World London Media</span>
 </a>
 <div class="nav-right">
-<ul class="nav-links" id="navLinks">
-<li><a href="../index.html" class="nav-link">Home</a></li>
-<li><a href="work.html" class="nav-link">Work</a></li>
-<li><a href="services.html" class="nav-link">Services</a></li>
-<li><a href="about.html" class="nav-link active">About</a></li>
-<li><a href="contact.html" class="nav-link">Contact</a></li>
-</ul>
 <button class="lang-toggle" id="langToggle">
 <span class="lang-current">EN</span><span class="lang-divider">/</span><span class="lang-other">TR</span>
 </button>
@@ -47,79 +36,180 @@
 </div>
 </nav>
 
+<!-- Fullscreen Menu Overlay -->
+<div class="menu-overlay" id="menuOverlay">
+<div class="menu-links">
+<a href="../index.html" class="menu-link"><span class="link-num">01</span>Home</a>
+<a href="work.html" class="menu-link"><span class="link-num">02</span>Work</a>
+<a href="services.html" class="menu-link"><span class="link-num">03</span>Services</a>
+<a href="about.html" class="menu-link active"><span class="link-num">04</span>About</a>
+<a href="contact.html" class="menu-link"><span class="link-num">05</span>Contact</a>
+</div>
+<div class="menu-info">
+<div class="menu-wm-watermark">
+<svg viewBox="0 0 289.9 274.62" xmlns="http://www.w3.org/2000/svg">
+<path fill="rgba(254,243,226,0.05)" d="M174.51,180.15c-16.34-36.26-32.68-72.53-49.03-108.79-12.35,34.31-26.35,76.24-37.06,108.79-2.06-.19-5.15-.39-7.82-.39s-5.15.19-7.62.39c-10.5-38.02-24.29-80.72-36.85-119.91-2.88-7.21-7.82-11.12-14-12.09l.41-3.12c5.76.58,11.53.78,18.73.78h.82c9.27,0,14.82-.19,23.06-.78l.62,3.12c-8.23.78-10.29,5.65-7.62,14.82,8.85,31.2,20.18,69.41,28.41,93.59,12.76-34.9,26.35-75.06,37.06-111.13,2.47.19,5.15.19,7.41.19,2.47,0,5.15,0,7.41-.19,18.28,31.48,36.56,62.96,54.84,94.43-6.26,13.43-12.52,26.86-18.78,40.29Z"/>
+<path fill="rgba(254,243,226,0.08)" d="M115.34,100.11c10.22,21,20.72,42.19,31.51,63.55,9.21,18.25,18.45,36.27,27.71,54.05,19.83-38.74,39.05-80.03,49.79-106.05,5.16.39,10.12.59,15.08.59s9.3-.19,14.05-.59l.62,3.13c-7.64.59-11.98,6.07-11.36,17.22,1.24,22.89,6.82,63.2,12.19,99.98,1.24,9.39,5.58,11.74,11.36,12.33l-.41,3.13c-6.4-.58-13.43-.78-21.07-.78s-15.7.2-21.28.78l-.41-3.13c8.06-1.17,11.36-4.89,10.74-12.52-2.69-31.11-7.23-66.72-10.95-90.79-13.64,26.8-33.67,68.48-51.85,107.61h-4.55c-21.47-36.55-42.93-73.1-64.4-109.66,4.41-12.95,8.83-25.91,13.24-38.86Z"/>
+</svg>
+</div>
+<div class="menu-contact-info">
+<a href="mailto:info@worldlondonmedia.com">info@worldlondonmedia.com</a>
+<p>London, UK &bull; Izmir, Turkey</p>
+<div class="menu-social">
+<a href="https://www.instagram.com/worldlondonmedia/" target="_blank">Instagram</a>
+<a href="https://wa.me/447717115002" target="_blank">WhatsApp</a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Page Hero -->
 <section class="page-hero">
 <div class="page-hero-bg"></div>
+<div class="page-hero-wm">
+<svg viewBox="0 0 289.9 274.62" xmlns="http://www.w3.org/2000/svg">
+<path fill="rgba(199,37,62,0.03)" d="M174.51,180.15c-16.34-36.26-32.68-72.53-49.03-108.79-12.35,34.31-26.35,76.24-37.06,108.79-2.06-.19-5.15-.39-7.82-.39s-5.15.19-7.62.39c-10.5-38.02-24.29-80.72-36.85-119.91-2.88-7.21-7.82-11.12-14-12.09l.41-3.12c5.76.58,11.53.78,18.73.78h.82c9.27,0,14.82-.19,23.06-.78l.62,3.12c-8.23.78-10.29,5.65-7.62,14.82,8.85,31.2,20.18,69.41,28.41,93.59,12.76-34.9,26.35-75.06,37.06-111.13,2.47.19,5.15.19,7.41.19,2.47,0,5.15,0,7.41-.19,18.28,31.48,36.56,62.96,54.84,94.43-6.26,13.43-12.52,26.86-18.78,40.29Z"/>
+<path fill="rgba(199,37,62,0.05)" d="M115.34,100.11c10.22,21,20.72,42.19,31.51,63.55,9.21,18.25,18.45,36.27,27.71,54.05,19.83-38.74,39.05-80.03,49.79-106.05,5.16.39,10.12.59,15.08.59s9.3-.19,14.05-.59l.62,3.13c-7.64.59-11.98,6.07-11.36,17.22,1.24,22.89,6.82,63.2,12.19,99.98,1.24,9.39,5.58,11.74,11.36,12.33l-.41,3.13c-6.4-.58-13.43-.78-21.07-.78s-15.7.2-21.28.78l-.41-3.13c8.06-1.17,11.36-4.89,10.74-12.52-2.69-31.11-7.23-66.72-10.95-90.79-13.64,26.8-33.67,68.48-51.85,107.61h-4.55c-21.47-36.55-42.93-73.1-64.4-109.66,4.41-12.95,8.83-25.91,13.24-38.86Z"/>
+</svg>
+</div>
 <div class="page-hero-content">
-<span class="section-label" data-en="Who We Are" data-tr="Biz Kimiz">Who We Are</span>
-<h1 data-en="About <em>Us</em>" data-tr="Hakkımızda">About <em>Us</em></h1>
-<p data-en="A premium visual production studio bridging London and Turkey." data-tr="Londra ve Türkiye'yi birleştiren premium görsel prodüksiyon stüdyosu.">A premium visual production studio bridging London and Turkey.</p>
+<span class="section-label reveal" data-en="Who We Are" data-tr="Biz Kimiz">Who We Are</span>
+<h1 class="reveal reveal-d1" data-en="About <em>Us</em>" data-tr="Hakk&#305;m&#305;zda">About <em>Us</em></h1>
+<p class="reveal reveal-d2" data-en="A premium visual production studio bridging London and Turkey." data-tr="Londra ve T&uuml;rkiye'yi birle&#351;tiren premium g&ouml;rsel prod&uuml;ksiyon st&uuml;dyosu.">A premium visual production studio bridging London and Turkey.</p>
 </div>
 </section>
 
+<!-- About Section -->
 <section class="about-section">
 <div class="about-grid">
 <div class="about-text">
-<h2 data-en="Crafting <em>Visual Excellence</em> Since Day One" data-tr="İlk Günden Beri <em>Görsel Mükemmellik</em> Yaratıyoruz">Crafting <em>Visual Excellence</em> Since Day One</h2>
-<p data-en="World London Media is a premium visual production company operating from London and Izmir. We specialize in brand films, advertising, 3D visualization, drone cinematography, and comprehensive content production." data-tr="World London Media, Londra ve İzmir'den faaliyet gösteren premium bir görsel prodüksiyon şirketidir. Marka filmleri, reklam, 3D görselleştirme, drone çekimleri ve kapsamlı içerik üretiminde uzmanız.">World London Media is a premium visual production company operating from London and Izmir. We specialize in brand films, advertising, 3D visualization, drone cinematography, and comprehensive content production.</p>
-<p data-en="Our team combines creative excellence with technical mastery to deliver visual content that transforms brands and captivates audiences." data-tr="Ekibimiz, markaları dönüştüren ve izleyicileri cezbeden görsel içerikler sunmak için yaratıcı mükemmelliği teknik ustalıkla birleştirir.">Our team combines creative excellence with technical mastery to deliver visual content that transforms brands and captivates audiences.</p>
+<h2 class="reveal" data-en="Crafting <em>Visual Excellence</em> Since Day One" data-tr="&#304;lk G&uuml;nden Beri <em>G&ouml;rsel M&uuml;kemmellik</em> Yarat&#305;yoruz">Crafting <em>Visual Excellence</em> Since Day One</h2>
+<p class="reveal reveal-d1" data-en="World London Media is a premium visual production company operating from London and Izmir. We specialize in brand films, advertising, 3D visualization, drone cinematography, and comprehensive content production." data-tr="World London Media, Londra ve &#304;zmir'den faaliyet g&ouml;steren premium bir g&ouml;rsel prod&uuml;ksiyon &#351;irketidir. Marka filmleri, reklam, 3D g&ouml;rselle&#351;tirme, drone &#231;ekimleri ve kapsaml&#305; i&#231;erik &uuml;retiminde uzman&#305;z.">World London Media is a premium visual production company operating from London and Izmir. We specialize in brand films, advertising, 3D visualization, drone cinematography, and comprehensive content production.</p>
+<p class="reveal reveal-d2" data-en="Our team combines creative excellence with technical mastery to deliver visual content that transforms brands and captivates audiences." data-tr="Ekibimiz, markalar&#305; d&ouml;n&uuml;&#351;t&uuml;ren ve izleyicileri cezbeden g&ouml;rsel i&#231;erikler sunmak i&#231;in yarat&#305;c&#305; m&uuml;kemmellie teknik ustal&#305;kla birle&#351;tirir.">Our team combines creative excellence with technical mastery to deliver visual content that transforms brands and captivates audiences.</p>
 </div>
-<div class="about-visual"><span>WLM</span></div>
+<div class="about-visual reveal-scale">
+<svg class="wm-mark" viewBox="0 0 289.9 274.62" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="aboutWmGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#fa812f"/><stop offset="50%" stop-color="#c7253e"/>
+<stop offset="100%" stop-color="#821131"/></linearGradient></defs>
+<rect x=".5" y=".5" width="288.9" height="273.62" rx="14.44" ry="14.44" fill="rgba(199,37,62,0.04)" stroke="rgba(199,37,62,0.15)" stroke-miterlimit="10" stroke-width="2"/>
+<path fill="rgba(26,26,26,0.3)" d="M174.51,180.15c-16.34-36.26-32.68-72.53-49.03-108.79-12.35,34.31-26.35,76.24-37.06,108.79-2.06-.19-5.15-.39-7.82-.39s-5.15.19-7.62.39c-10.5-38.02-24.29-80.72-36.85-119.91-2.88-7.21-7.82-11.12-14-12.09l.41-3.12c5.76.58,11.53.78,18.73.78h.82c9.27,0,14.82-.19,23.06-.78l.62,3.12c-8.23.78-10.29,5.65-7.62,14.82,8.85,31.2,20.18,69.41,28.41,93.59,12.76-34.9,26.35-75.06,37.06-111.13,2.47.19,5.15.19,7.41.19,2.47,0,5.15,0,7.41-.19,18.28,31.48,36.56,62.96,54.84,94.43-6.26,13.43-12.52,26.86-18.78,40.29Z"/>
+<path fill="url(#aboutWmGrad)" d="M115.34,100.11c10.22,21,20.72,42.19,31.51,63.55,9.21,18.25,18.45,36.27,27.71,54.05,19.83-38.74,39.05-80.03,49.79-106.05,5.16.39,10.12.59,15.08.59s9.3-.19,14.05-.59l.62,3.13c-7.64.59-11.98,6.07-11.36,17.22,1.24,22.89,6.82,63.2,12.19,99.98,1.24,9.39,5.58,11.74,11.36,12.33l-.41,3.13c-6.4-.58-13.43-.78-21.07-.78s-15.7.2-21.28.78l-.41-3.13c8.06-1.17,11.36-4.89,10.74-12.52-2.69-31.11-7.23-66.72-10.95-90.79-13.64,26.8-33.67,68.48-51.85,107.61h-4.55c-21.47-36.55-42.93-73.1-64.4-109.66,4.41-12.95,8.83-25.91,13.24-38.86Z"/>
+</svg>
+</div>
 </div>
 </section>
 
+<!-- Stats -->
 <section class="stats-section">
 <div class="stats-grid">
-<div><div class="stat-number">150+</div><div class="stat-label" data-en="Projects Completed" data-tr="Tamamlanan Proje">Projects Completed</div></div>
-<div><div class="stat-number">50+</div><div class="stat-label" data-en="Brand Partners" data-tr="Marka Ortağı">Brand Partners</div></div>
-<div><div class="stat-number">2</div><div class="stat-label" data-en="Global Offices" data-tr="Global Ofis">Global Offices</div></div>
-<div><div class="stat-number">5+</div><div class="stat-label" data-en="Years Experience" data-tr="Yıllık Deneyim">Years Experience</div></div>
+<div class="reveal">
+<div class="stat-number" data-count="150">0+</div>
+<div class="stat-label" data-en="Projects Completed" data-tr="Tamamlanan Proje">Projects Completed</div>
+</div>
+<div class="reveal reveal-d1">
+<div class="stat-number" data-count="50">0+</div>
+<div class="stat-label" data-en="Brand Partners" data-tr="Marka Orta&#287;&#305;">Brand Partners</div>
+</div>
+<div class="reveal reveal-d2">
+<div class="stat-number" data-count="2">0</div>
+<div class="stat-label" data-en="Global Offices" data-tr="Global Ofis">Global Offices</div>
+</div>
+<div class="reveal reveal-d3">
+<div class="stat-number" data-count="5">0+</div>
+<div class="stat-label" data-en="Years Experience" data-tr="Y&#305;ll&#305;k Deneyim">Years Experience</div>
+</div>
 </div>
 </section>
 
+<!-- Values -->
 <section class="values-section">
 <div class="values-header">
-<span class="section-label" data-en="Our Values" data-tr="Değerlerimiz">Our Values</span>
-<h2 class="section-title" data-en="What Drives <em>Us</em>" data-tr="Bizi Ne <em>Yönlendiriyor</em>">What Drives <em>Us</em></h2>
+<span class="section-label reveal" data-en="Our Values" data-tr="De&#287;erlerimiz">Our Values</span>
+<h2 class="section-title reveal reveal-d1" data-en="What Drives <em>Us</em>" data-tr="Bizi Ne <em>Y&ouml;nlendiriyor</em>">What Drives <em>Us</em></h2>
 </div>
 <div class="values-grid">
-<div class="value-item">
+<div class="value-item reveal">
 <div class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
-<h3 class="value-title" data-en="Excellence" data-tr="Mükemmellik">Excellence</h3>
-<p class="value-desc" data-en="We pursue perfection in every frame, every edit, every delivery." data-tr="Her karede, her kurguda, her teslimat'ta mükemmelliği hedefliyoruz.">We pursue perfection in every frame, every edit, every delivery.</p>
+<h3 class="value-title" data-en="Excellence" data-tr="M&uuml;kemmellik">Excellence</h3>
+<p class="value-desc" data-en="We pursue perfection in every frame, every edit, every delivery." data-tr="Her karede, her kurguda, her teslimat'ta m&uuml;kemmelli&#287;i hedefliyoruz.">We pursue perfection in every frame, every edit, every delivery.</p>
 </div>
-<div class="value-item">
+<div class="value-item reveal reveal-d1">
 <div class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg></div>
-<h3 class="value-title" data-en="Innovation" data-tr="İnovasyon">Innovation</h3>
-<p class="value-desc" data-en="Pushing creative boundaries with cutting-edge technology." data-tr="Son teknolojiyle yaratıcılığın sınırlarını zorluyoruz.">Pushing creative boundaries with cutting-edge technology.</p>
+<h3 class="value-title" data-en="Innovation" data-tr="&#304;novasyon">Innovation</h3>
+<p class="value-desc" data-en="Pushing creative boundaries with cutting-edge technology." data-tr="Son teknolojiyle yarat&#305;c&#305;l&#305;&#287;&#305;n s&#305;n&#305;rlar&#305;n&#305; zorluyoruz.">Pushing creative boundaries with cutting-edge technology.</p>
 </div>
-<div class="value-item">
+<div class="value-item reveal reveal-d2">
 <div class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div>
-<h3 class="value-title" data-en="Partnership" data-tr="Ortaklık">Partnership</h3>
-<p class="value-desc" data-en="We build lasting relationships, becoming an extension of your team." data-tr="Kalıcı ilişkiler kurarak ekibinizin bir uzantısı oluyoruz.">We build lasting relationships, becoming an extension of your team.</p>
+<h3 class="value-title" data-en="Partnership" data-tr="Ortakl&#305;k">Partnership</h3>
+<p class="value-desc" data-en="We build lasting relationships, becoming an extension of your team." data-tr="Kal&#305;c&#305; ili&#351;kiler kurarak ekibinizin bir uzant&#305;s&#305; oluyoruz.">We build lasting relationships, becoming an extension of your team.</p>
 </div>
 </div>
 </section>
 
+<!-- CTA Banner -->
 <section class="cta-banner">
-<h2 data-en="Ready to Work <em>Together?</em>" data-tr="Birlikte Çalışmaya <em>Hazır mısınız?</em>">Ready to Work <em>Together?</em></h2>
-<a href="contact.html" class="cta-btn-filled"><span data-en="Get In Touch" data-tr="İletişime Geçin">Get In Touch</span></a>
+<div class="cta-wm-watermark">
+<svg viewBox="0 0 289.9 274.62" xmlns="http://www.w3.org/2000/svg">
+<path fill="rgba(254,243,226,0.05)" d="M174.51,180.15c-16.34-36.26-32.68-72.53-49.03-108.79-12.35,34.31-26.35,76.24-37.06,108.79-2.06-.19-5.15-.39-7.82-.39s-5.15.19-7.62.39c-10.5-38.02-24.29-80.72-36.85-119.91-2.88-7.21-7.82-11.12-14-12.09l.41-3.12c5.76.58,11.53.78,18.73.78h.82c9.27,0,14.82-.19,23.06-.78l.62,3.12c-8.23.78-10.29,5.65-7.62,14.82,8.85,31.2,20.18,69.41,28.41,93.59,12.76-34.9,26.35-75.06,37.06-111.13,2.47.19,5.15.19,7.41.19,2.47,0,5.15,0,7.41-.19,18.28,31.48,36.56,62.96,54.84,94.43-6.26,13.43-12.52,26.86-18.78,40.29Z"/>
+<path fill="rgba(254,243,226,0.08)" d="M115.34,100.11c10.22,21,20.72,42.19,31.51,63.55,9.21,18.25,18.45,36.27,27.71,54.05,19.83-38.74,39.05-80.03,49.79-106.05,5.16.39,10.12.59,15.08.59s9.3-.19,14.05-.59l.62,3.13c-7.64.59-11.98,6.07-11.36,17.22,1.24,22.89,6.82,63.2,12.19,99.98,1.24,9.39,5.58,11.74,11.36,12.33l-.41,3.13c-6.4-.58-13.43-.78-21.07-.78s-15.7.2-21.28.78l-.41-3.13c8.06-1.17,11.36-4.89,10.74-12.52-2.69-31.11-7.23-66.72-10.95-90.79-13.64,26.8-33.67,68.48-51.85,107.61h-4.55c-21.47-36.55-42.93-73.1-64.4-109.66,4.41-12.95,8.83-25.91,13.24-38.86Z"/>
+</svg>
+</div>
+<div style="position:relative;z-index:1">
+<h2 class="reveal" data-en="Ready to Work <em>Together?</em>" data-tr="Birlikte &#199;al&#305;&#351;maya <em>Haz&#305;r m&#305;s&#305;n&#305;z?</em>">Ready to Work <em>Together?</em></h2>
+<a href="contact.html" class="cta-btn-filled reveal reveal-d1"><span data-en="Get In Touch" data-tr="&#304;leti&#351;ime Ge&#231;in">Get In Touch</span></a>
+</div>
 </section>
 
+<!-- Footer -->
 <footer>
-<div class="footer-content">
-<a href="../index.html" class="footer-logo-link"><span class="footer-logo-text">World London <span>Media</span></span></a>
+<div class="footer-wm-watermark">
+<svg viewBox="0 0 289.9 274.62" xmlns="http://www.w3.org/2000/svg">
+<path fill="rgba(254,243,226,0.05)" d="M174.51,180.15c-16.34-36.26-32.68-72.53-49.03-108.79-12.35,34.31-26.35,76.24-37.06,108.79-2.06-.19-5.15-.39-7.82-.39s-5.15.19-7.62.39c-10.5-38.02-24.29-80.72-36.85-119.91-2.88-7.21-7.82-11.12-14-12.09l.41-3.12c5.76.58,11.53.78,18.73.78h.82c9.27,0,14.82-.19,23.06-.78l.62,3.12c-8.23.78-10.29,5.65-7.62,14.82,8.85,31.2,20.18,69.41,28.41,93.59,12.76-34.9,26.35-75.06,37.06-111.13,2.47.19,5.15.19,7.41.19,2.47,0,5.15,0,7.41-.19,18.28,31.48,36.56,62.96,54.84,94.43-6.26,13.43-12.52,26.86-18.78,40.29Z"/>
+<path fill="rgba(254,243,226,0.08)" d="M115.34,100.11c10.22,21,20.72,42.19,31.51,63.55,9.21,18.25,18.45,36.27,27.71,54.05,19.83-38.74,39.05-80.03,49.79-106.05,5.16.39,10.12.59,15.08.59s9.3-.19,14.05-.59l.62,3.13c-7.64.59-11.98,6.07-11.36,17.22,1.24,22.89,6.82,63.2,12.19,99.98,1.24,9.39,5.58,11.74,11.36,12.33l-.41,3.13c-6.4-.58-13.43-.78-21.07-.78s-15.7.2-21.28.78l-.41-3.13c8.06-1.17,11.36-4.89,10.74-12.52-2.69-31.11-7.23-66.72-10.95-90.79-13.64,26.8-33.67,68.48-51.85,107.61h-4.55c-21.47-36.55-42.93-73.1-64.4-109.66,4.41-12.95,8.83-25.91,13.24-38.86Z"/>
+</svg>
+</div>
+<div class="footer-grid">
+<div class="footer-brand">
+<a href="../index.html" class="footer-logo-link">
+<svg class="wm-mark" viewBox="0 0 289.9 274.62" xmlns="http://www.w3.org/2000/svg">
+<rect x=".5" y=".5" width="288.9" height="273.62" rx="14.44" ry="14.44" fill="rgba(254,243,226,0.1)" stroke="rgba(254,243,226,0.3)" stroke-miterlimit="10" stroke-width="2"/>
+<path fill="rgba(254,243,226,0.6)" d="M174.51,180.15c-16.34-36.26-32.68-72.53-49.03-108.79-12.35,34.31-26.35,76.24-37.06,108.79-2.06-.19-5.15-.39-7.82-.39s-5.15.19-7.62.39c-10.5-38.02-24.29-80.72-36.85-119.91-2.88-7.21-7.82-11.12-14-12.09l.41-3.12c5.76.58,11.53.78,18.73.78h.82c9.27,0,14.82-.19,23.06-.78l.62,3.12c-8.23.78-10.29,5.65-7.62,14.82,8.85,31.2,20.18,69.41,28.41,93.59,12.76-34.9,26.35-75.06,37.06-111.13,2.47.19,5.15.19,7.41.19,2.47,0,5.15,0,7.41-.19,18.28,31.48,36.56,62.96,54.84,94.43-6.26,13.43-12.52,26.86-18.78,40.29Z"/>
+<path fill="var(--orange)" d="M115.34,100.11c10.22,21,20.72,42.19,31.51,63.55,9.21,18.25,18.45,36.27,27.71,54.05,19.83-38.74,39.05-80.03,49.79-106.05,5.16.39,10.12.59,15.08.59s9.3-.19,14.05-.59l.62,3.13c-7.64.59-11.98,6.07-11.36,17.22,1.24,22.89,6.82,63.2,12.19,99.98,1.24,9.39,5.58,11.74,11.36,12.33l-.41,3.13c-6.4-.58-13.43-.78-21.07-.78s-15.7.2-21.28.78l-.41-3.13c8.06-1.17,11.36-4.89,10.74-12.52-2.69-31.11-7.23-66.72-10.95-90.79-13.64,26.8-33.67,68.48-51.85,107.61h-4.55c-21.47-36.55-42.93-73.1-64.4-109.66,4.41-12.95,8.83-25.91,13.24-38.86Z"/>
+</svg>
+<span class="footer-logo-text">World <span>London</span> Media</span>
+</a>
+<p class="footer-tagline" data-en="Premium visual production. London &amp; Izmir." data-tr="Premium g&ouml;rsel prod&uuml;ksiyon. Londra &amp; &#304;zmir.">Premium visual production. London &amp; Izmir.</p>
+</div>
+<div>
+<h4 class="footer-col-title">Navigation</h4>
 <div class="footer-nav">
 <a href="work.html">Work</a>
 <a href="services.html">Services</a>
 <a href="about.html">About</a>
 <a href="contact.html">Contact</a>
 </div>
-<div class="footer-locations"><span>London, UK</span><span class="separator">&bull;</span><span>İzmir, Turkey</span></div>
-<div class="social-links">
+</div>
+<div>
+<h4 class="footer-col-title">Social</h4>
+<div class="footer-social">
 <a href="https://www.instagram.com/worldlondonmedia/" target="_blank">Instagram</a>
 <a href="https://wa.me/447717115002" target="_blank">WhatsApp</a>
 </div>
+</div>
+<div>
+<h4 class="footer-col-title">Locations</h4>
+<div class="footer-locations-list">
+<span>London, UK</span>
+<span>&#304;zmir, Turkey</span>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
 <p class="copyright">&copy; 2025 World London Media. All rights reserved.</p>
+<button class="footer-scroll-top" id="scrollTopBtn">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
 </div>
 </footer>
 
